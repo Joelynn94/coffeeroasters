@@ -1,11 +1,11 @@
-@import "./base/reset";
-@import "./base/base";
-@import "./base/config";
-@import "./base/typography";
-@import "./base/utilities";
-@import "./layout/header";
-@import "./layout/navigation";
-@import "./layout/mainContent";
+@import "./01-base/reset";
+@import "./01-base/base";
+@import "./01-base/config";
+@import "./01-base/typography";
+@import "./01-base/utilities";
+@import "./02-layout/header";
+@import "./02-layout/navigation";
+@import "./02-layout/mainContent";
 
 
 body {
