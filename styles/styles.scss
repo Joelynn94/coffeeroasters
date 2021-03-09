@@ -1,4 +1,9 @@
-@import "./header";
+@import "./config";
+@import "./utilities";
+@import "./base/reset";
+@import "./base/base";
+@import "./layout/header";
+
 
 body {
   background-color: red;
