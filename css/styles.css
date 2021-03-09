@@ -342,5 +342,79 @@ template {
 }
 
 body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+h1, h2, h3, h4, .alt-title {
+  font-family: 'Fraunces', serif;
+}
+
+.alt-title {
+  font-size: 9.375rem;
+  line-height: 4.5rem;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+nav {
+  font-family: 'Barlow', sans-serif;
+  font-size: .75rem;
+  line-height: .938rem;
+  letter-spacing: 1px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.btn-default {
+  color: #FEFCF7;
+  background-color: #0E8784;
+}
+
+.btn-main {
+  color: #FEFCF7;
+  background-color: #66D2CF;
+}
+
+body {
   background-color: red;
 }
