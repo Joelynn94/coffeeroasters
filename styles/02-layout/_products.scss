@@ -1,0 +1,20 @@
+.products {
+  text-align: center;
+  display: grid;
+  gap: 3rem;
+
+  &__heading {
+    background: linear-gradient( #979797, rgba(254,252,247) 110%);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  &__product-name {
+    color: $dark-grey-blue
+  }
+
+  &__product-description {
+    color: $dark-grey-blue;
+  }
+}

@@ -538,6 +538,27 @@ nav {
   color: #FEFCF7;
 }
 
+.products {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+}
+
+.products__heading {
+  background: -webkit-linear-gradient(#979797, rgba(254, 252, 247, 0.9) 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.products__product-name {
+  color: #333D4B;
+}
+
+.products__product-description {
+  color: #333D4B;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
