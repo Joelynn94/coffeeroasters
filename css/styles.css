@@ -433,6 +433,16 @@ nav {
   margin-left: .32rem;
 }
 
+.nav__logo a > img {
+  max-width: 13rem;
+}
+
+@media (min-width: 28.125rem) {
+  .nav__logo a > img {
+    max-width: 100%;
+  }
+}
+
 .nav__mobile-menu {
   display: none;
   position: absolute;
@@ -484,7 +494,7 @@ nav {
 }
 
 .nav__mobile-btn {
-  margin-top: .25rem;
+  margin-top: .45rem;
   padding: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

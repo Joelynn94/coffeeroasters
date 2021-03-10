@@ -9,6 +9,16 @@
     &--text {
       margin-left: .32rem;
     }
+
+    a > img {
+      max-width: 13rem;
+    }
+
+    @media (min-width: 28.125rem) {
+      a > img {
+        max-width: 100%;
+      }
+    }
   }
 
   &__mobile-menu {
@@ -52,7 +62,7 @@
   }
 
   &__mobile-btn {
-    margin-top: .25rem;
+    margin-top: .45rem;
     padding: 1rem;
     align-self: center;
 
