@@ -410,6 +410,14 @@ nav {
   margin-left: auto;
 }
 
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,9 +451,8 @@ nav {
 }
 
 .nav__mobile-menu {
-  display: none;
   position: absolute;
-  top: 6rem;
+  top: 5rem;
   left: 0;
   right: 0;
   width: 100%;
@@ -475,6 +482,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 3rem;
 }
 
 .nav__item {
