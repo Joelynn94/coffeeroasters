@@ -40,3 +40,11 @@ nav {
   line-height: .938rem;
   letter-spacing: 1px;
 }
+
+@media (max-width: 36rem) {
+  .nav__link {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
