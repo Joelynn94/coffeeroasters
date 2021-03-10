@@ -533,9 +533,9 @@ nav {
   opacity: .8;
 }
 
-.banner .btn {
+.banner__inner .btn {
+  margin-top: 1.5rem;
   text-decoration: none;
-  color: #FEFCF7;
 }
 
 .products {
@@ -546,7 +546,9 @@ nav {
 }
 
 .products__heading {
-  background: -webkit-linear-gradient(#979797, rgba(254, 252, 247, 0.9) 110%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#979797), color-stop(110%, #fefcf7));
+  background: linear-gradient(#979797, #fefcf7 110%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

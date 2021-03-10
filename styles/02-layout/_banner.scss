@@ -13,12 +13,14 @@
     p {
       opacity: .8;
     }
+
+    .btn {
+      margin-top: 1.5rem;
+      text-decoration: none;
+    }
   }
 
-  .btn {
-    text-decoration: none;
-    color: $light-cream;
-  }
+
 }
 
 @media (min-width: 28.125rem) {
