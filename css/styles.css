@@ -404,7 +404,6 @@ nav {
 }
 
 .container {
-  width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -502,6 +501,7 @@ nav {
 }
 
 .nav .container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,6 +515,29 @@ nav {
       flex-wrap: wrap;
 }
 
+.banner {
+  background: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 6.25rem;
+}
+
+.banner__inner {
+  text-align: center;
+  padding: 6.25rem 1.5rem;
+  color: #FEFCF7;
+}
+
+.banner__inner p {
+  opacity: .8;
+}
+
+.banner .btn {
+  text-decoration: none;
+  color: #FEFCF7;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -526,7 +549,7 @@ nav {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: .938rem 1.875rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;

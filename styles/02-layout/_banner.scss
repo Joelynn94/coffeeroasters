@@ -1,0 +1,26 @@
+.banner {
+  background: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 6.25rem;
+
+  &__inner {
+    text-align: center;
+    padding: 6.25rem 1.5rem;
+    color: $light-cream;
+
+    p {
+      opacity: .8;
+    }
+  }
+
+  .btn {
+    text-decoration: none;
+    color: $light-cream;
+  }
+}
+
+@media (min-width: 28.125rem) {
+
+}
