@@ -352,6 +352,16 @@ header {
   min-height: 3rem;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-bottom: 3rem;
+}
+
 body {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
@@ -401,6 +411,14 @@ nav {
     font-size: 2rem;
     line-height: 2.25rem;
   }
+}
+
+.process__card-number {
+  font-family: 'Fraunces', serif;
+}
+
+.btn {
+  font-family: 'Fraunces', serif;
 }
 
 .container {
@@ -465,9 +483,6 @@ nav {
 }
 
 .nav__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,11 +556,6 @@ nav {
   opacity: .8;
 }
 
-.banner__inner .btn {
-  margin-top: 1.5rem;
-  text-decoration: none;
-}
-
 .products {
   margin-top: 6rem;
   text-align: center;
@@ -608,9 +618,77 @@ nav {
   padding: 1rem;
 }
 
-.why-us__reason-p {
+.why-us__reason-text {
   margin: 1rem auto;
   max-width: 13rem;
+}
+
+.process {
+  text-align: center;
+}
+
+.process__heading {
+  color: #83888F;
+}
+
+.process__cards {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.process__card {
+  padding: 1rem;
+}
+
+.process__card-number {
+  color: #FDD6BA;
+  font-size: 4.5rem;
+}
+
+.process__card-heading {
+  color: #333D4B;
+}
+
+.footer {
+  margin-top: 8rem;
+  background-color: #333D4B;
+  color: #FEFCF7;
+  padding: 3rem;
+  text-align: center;
+}
+
+.footer__logo {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #83888F;
+  padding: 1rem;
+  display: block;
+}
+
+.footer__social {
+  margin-top: 3rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social a {
+  padding: 1.25rem;
 }
 
 .btn {
@@ -637,11 +715,15 @@ nav {
 .btn-default {
   color: #FEFCF7;
   background-color: #0E8784;
+  text-decoration: none;
+  margin-top: 1.5rem;
 }
 
 .btn-main {
   color: #FEFCF7;
   background-color: #66D2CF;
+  text-decoration: none;
+  margin-top: 1.5rem;
 }
 
 body {

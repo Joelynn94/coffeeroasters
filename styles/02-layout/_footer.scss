@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 8rem;
+  background-color: $dark-grey-blue;
+  color: $light-cream;
+  padding: 3rem;
+  text-align: center;
+
+  &__logo {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $grey;
+    padding: 1rem;
+    display: block;
+  }
+
+  &__social {
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      padding: 1.25rem;
+    }
+  }
+}

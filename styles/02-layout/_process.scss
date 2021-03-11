@@ -1,0 +1,28 @@
+.process {
+  text-align: center;
+
+  &__heading {
+    color: $grey;
+  }
+
+  &__cards {
+    margin-top: 5rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  &__card {
+    padding: 1rem;
+
+    &-number {
+      color: $pale-orange;
+      font-size: 4.5rem;
+    }
+
+    &-heading {
+      color: $dark-grey-blue;
+    }
+  }
+
+}
