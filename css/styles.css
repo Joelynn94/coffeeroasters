@@ -547,6 +547,7 @@ nav {
 }
 
 .products {
+  margin-top: 6rem;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -567,6 +568,49 @@ nav {
 
 .products__product-description {
   color: #333D4B;
+}
+
+.why-us {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.why-us__container {
+  background-color: #333D4B;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.why-us__inner {
+  padding: 1.5rem;
+}
+
+.why-us__reasons {
+  margin-bottom: 6.25rem;
+  padding: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  background: url("../../assets/about/desktop/bg-quality.png");
+  background-repeat: no-repeat;
+  background-size: 105% 50%;
+  background-position: top;
+}
+
+.why-us__reason {
+  background-color: #0E8784;
+  border-radius: 10px;
+  padding: 2rem 1.75rem;
+}
+
+.why-us__reason-img {
+  padding: 1rem;
+}
+
+.why-us__reason-p {
+  margin: 1rem auto;
+  max-width: 13rem;
 }
 
 .btn {

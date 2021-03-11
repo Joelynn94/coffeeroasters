@@ -1,0 +1,43 @@
+.why-us {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: $light-cream;
+
+
+  &__container {
+    background-color: $dark-grey-blue;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  &__inner {
+    padding: 1.5rem;
+  }
+
+  &__reasons {
+    margin-bottom: 6.25rem;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    background: url("../../assets/about/desktop/bg-quality.png");
+    background-repeat: no-repeat;
+    background-size: 105% 50%;
+    background-position: top;
+  }
+
+  &__reason {
+    background-color: $dark-cyan;
+    border-radius: 10px;
+    padding: 2rem 1.75rem;
+    
+
+    &-img {
+      padding: 1rem;
+    }
+
+    &-p {
+      margin: 1rem auto;
+      max-width: 13rem;
+    }
+  }
+}
