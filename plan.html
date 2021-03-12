@@ -211,9 +211,9 @@
             <span id="jsDelivery" class="summary__text"></span>.”
           </h4>
         </div>
-        <a href="plan.html" class="btn btn-default">
+        <button class="btn btn-default" data-open="modal">
           Create your plan
-        </a>
+        </button>
       </section>
     </div>
   </main>
@@ -221,17 +221,25 @@
 
 
   <!-- Modal -->
-  Order Summary
-
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-  sent to me _____.”
-
-  Is this correct? You can proceed to checkout or go back to plan selection if something
-  is off. Subscription discount codes can also be redeemed at the checkout.
-
-  $_____/month
-
-  Checkout
+  <div class="modal" id="modal">
+    <div class="modal__inner">
+      <header class="modal__header">
+        <h2>Order Summary</h2>
+      </header>
+      <section class="modal__body">
+        <h4>“I drink my coffee as <span id="jsPreference" class="summary__text"></span>, with a
+          <span id="jsBean" class="summary__text"></span>, type of
+          bean. <span id="jsQuantity" class="summary__text"></span> ground ala <span id="jsGrind"
+            class="summary__text"></span>,
+          sent to me
+          <span id="jsDelivery" class="summary__text"></span>.”
+        </h4>
+        <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription
+          discount codes can also be redeemed at the checkout.</p>
+        <a href="" class="btn btn-default">Checkout - $__/month</a>
+      </section>
+    </div>
+  </div>
   <!-- End modal -->
 
   <div class="container">

@@ -18,6 +18,9 @@ const dataGrind = document.querySelector("#jsGrind");
 const deliveries = document.getElementsByName("deliveries");
 const dataDelivery = document.querySelector("#jsDelivery");
 
+const trigger = document.querySelector("[data-open]");
+const modal = document.querySelector(".modal");
+
 menuBtn.addEventListener('click', () => {
   // toggle the class "close"
   navMenu.classList.toggle("close");
@@ -61,5 +64,16 @@ for (let i = 0; i < options.length; i++) {
   });
 }
 
+function toggleModal() {
+  modal.classList.toggle("is-visible");
+}
 
+function modalClick(e) {
+  if (e.target == modal) {
+    toggleModal();
+  }
+}
+
+trigger.addEventListener("click", toggleModal);
+window.addEventListener("click", modalClick);
 
