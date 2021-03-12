@@ -4,7 +4,8 @@
   
 
     input[type="radio"] {
-      display: none;
+      height: 0;
+      width: 0;
       &:not(:disabled) ~ label {
         cursor: pointer;
       }
@@ -31,8 +32,8 @@
     }
 
     input[type="radio"]:focus + label {
-      background-color: $pale-orange;
-      color: $dark-grey-blue;
+      background-color: $dark-cyan;
+      color: $light-cream;
     }
 
     input[type="radio"]:hover + label {

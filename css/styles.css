@@ -841,7 +841,8 @@ nav {
 }
 
 .options input[type="radio"] {
-  display: none;
+  height: 0;
+  width: 0;
 }
 
 .options input[type="radio"]:not(:disabled) ~ label {
@@ -870,8 +871,8 @@ nav {
 }
 
 .options input[type="radio"]:focus + label {
-  background-color: #FDD6BA;
-  color: #333D4B;
+  background-color: #0E8784;
+  color: #FEFCF7;
 }
 
 .options input[type="radio"]:hover + label {
