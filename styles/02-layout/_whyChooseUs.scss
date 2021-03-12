@@ -12,6 +12,11 @@
 
   &__inner {
     padding: 1.5rem;
+
+    p {
+      opacity: .8;
+      color: $light-cream;
+    }
   }
 
   &__reasons {
@@ -23,20 +28,23 @@
     background-repeat: no-repeat;
     background-size: 105% 50%;
     background-position: top;
+    border-bottom-left-radius: 1rem;
   }
 
   &__reason {
     background-color: $dark-cyan;
-    border-radius: 10px;
-    padding: 2rem 1.75rem;
-    
+    border-radius: 1rem;
+    padding: 4rem 1.75rem;
+    display: flex;
+    flex-direction: column;
 
     &-img {
       padding: 1rem;
+      margin: 0 auto;
     }
 
     &-text {
-      margin: 1rem auto;
+      margin: 0 auto;
       max-width: 13rem;
     }
   }

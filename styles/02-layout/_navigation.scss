@@ -3,15 +3,14 @@
   align-items: center;
 
   &__logo {
-    display: flex;
-    align-items: center;
 
-    &--text {
-      margin-left: .32rem;
+    a {
+      padding: 1rem;
+      display: block;
     }
 
     a > img {
-      max-width: 13rem;
+      max-width: 12rem;
     }
 
     @media (min-width: 28.125rem) {

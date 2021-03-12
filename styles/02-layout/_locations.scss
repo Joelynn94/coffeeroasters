@@ -1,0 +1,27 @@
+.locations {
+  margin-top: 7.5rem;
+  text-align: center;
+
+  h4 {
+    color: $grey;
+  }
+
+  &__all-locations {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__location {
+    margin-top: 6rem;
+
+    address {
+      font-style: normal;
+      color: $dark-grey-blue;
+    }
+
+    h3 {
+      color: $dark-grey-blue;
+    }
+
+  }
+}

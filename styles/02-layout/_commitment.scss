@@ -1,0 +1,23 @@
+.commitment {
+  margin-top: 6rem;
+  margin-bottom: 7.5rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+
+  h3 {
+    color: $dark-grey-blue;
+  }
+
+  img {
+    border-radius: 1rem;
+    max-height: 31rem;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-top: 0;
+    // max-width: 31rem;
+    // margin: 0 auto;
+  }
+}

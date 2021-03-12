@@ -1,7 +1,16 @@
-.banner {
+#homeBanner {
   background: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#aboutBanner {
+  background: url("../../assets/about/mobile/image-hero-whitecup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
   border-radius: 10px;
   margin-bottom: 6.25rem;
 
@@ -9,6 +18,8 @@
     text-align: center;
     padding: 6.25rem 1.5rem;
     color: $light-cream;
+    max-width: 18.75rem;
+    margin: 0 auto;
 
     p {
       opacity: .8;

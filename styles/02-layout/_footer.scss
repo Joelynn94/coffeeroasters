@@ -8,6 +8,10 @@
   &__logo {
     margin: 0 auto;
     margin-bottom: 3rem;
+    
+    a {
+      display: block;
+    }
   }
 
   &__link {
@@ -15,16 +19,18 @@
     color: $grey;
     padding: 1rem;
     display: block;
+    font-weight: 700;
   }
 
   &__social {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
     a {
+      display: block;
       padding: 1.25rem;
     }
   }
