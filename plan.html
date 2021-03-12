@@ -6,33 +6,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap"
     rel="stylesheet">
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+  <link rel="stylesheet" href="./css/styles.min.css">
+  <title>Create Plan | Coffeeroasters subscription site</title>
 </head>
 
 <body>
-  Home
-  About us
-  Create your plan
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="./assets/shared/desktop/logo.svg" alt="image of coffeeroasters logo">
+          </a>
+        </div>
+        <a class="nav__mobile-btn" href="#" aria-label="Open mobile menu">
+          <img id="toggleBtnImg" src="./assets/shared/mobile/icon-hamburger.svg" alt="open mobile menu bars">
+        </a>
+        <div class="nav__mobile-menu close">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">About us</a></li>
+            <li class="nav__item"><a class="nav__link" href="plan.html">Create your plan</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  Create a plan
-  Build a subscription plan that best fits your needs. We offer an assortment of the best
-  artisan coffees from around the globe delivered fresh to your door.
+  <div class="container">
+    <section class="banner" id="aboutBanner">
+      <div class="banner__inner">
+        <h2>Create a plan</h2>
+        <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from
+          around the globe delivered fresh to your door.
+        </p>
+      </div>
+    </section>
+  </div>
 
-  01
-  Pick your coffee
-  Select from our evolving range of artisan coffees. Our beans are ethically
-  sourced and we pay fair prices for them. There's new coffees in all profiles
-  every month for you to try out.
+  <section class="process dark-bg">
 
-  02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type.
-  Pause, skip or cancel your subscription with no commitment through our online portal.
+    <div class="process__cards">
+      <div class="process__card">
+        <span class="process__card-number">01</span>
+        <h4 class="process__card-heading light-text">Pick your coffee</h4>
+        <p class="process__card-text">Select from our evolving range of artisan coffees. Our beans are ethically
+          sourced
+          and we pay fair prices
+          for them. There are new coffees in all profiles every month for you to try out.</p>
+      </div>
 
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-  world-class coffees curated to provide a distinct tasting experience.
+      <div class="process__card">
+        <span class="process__card-number">02</span>
+        <h4 class="process__card-heading light-text">Choose the frequency</h4>
+        <p class="process__card-text">Customize your order frequency, quantity, even your roast style and grind
+          type.Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+      </div>
+
+      <div class="process__card">
+        <span class="process__card-number">03</span>
+        <h4 class="process__card-heading light-text">Receive and enjoy!</h4>
+        <p class="process__card-text">We ship your package within 48 hours, freshly roasted. Sit back and enjoy
+          award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+      </div>
+    </div>
+
+  </section>
 
   01 Preferences
   02 Bean type
@@ -114,9 +153,38 @@
   Checkout
   <!-- End modal -->
 
-  Home
-  About us
-  Create your plan
+  <div class="container">
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="#">
+          <img src="./assets/shared/desktop/logo-white.svg" alt="">
+        </a>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="#">Home</a></li>
+        <li class="footer__item"><a class="footer__link" href="about.html">About us</a></li>
+        <li class="footer__item"><a class="footer__link" href="plan.html">Create your plan</a></li>
+      </ul>
+      <ul class="footer__social">
+        <li>
+          <a href="">
+            <img src="./assets/shared/desktop/icon-facebook.svg" alt="Facebook link to Joseph Lynn's profile">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/shared/desktop/icon-twitter.svg" alt="Twitter link to Joseph Lynn's profile">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/shared/desktop/icon-instagram.svg" alt="Insagram link to Joseph Lynn's profile">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
   <script src="./scripts.js"></script>
 </body>
 

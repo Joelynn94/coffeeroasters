@@ -670,6 +670,21 @@ nav {
   color: #333D4B;
 }
 
+.dark-bg {
+  background-color: #333D4B;
+  color: #FEFCF7;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.dark-bg p {
+  opacity: .8;
+}
+
+.light-text {
+  color: #FEFCF7;
+}
+
 .footer {
   margin-top: 8rem;
   background-color: #333D4B;

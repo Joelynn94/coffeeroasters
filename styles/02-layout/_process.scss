@@ -24,5 +24,19 @@
       color: $dark-grey-blue;
     }
   }
+}
 
+.dark-bg {
+  background-color: $dark-grey-blue;
+  color: $light-cream;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  p {
+    opacity: .8;
+  }
+}
+
+.light-text {
+  color: $light-cream;
 }
