@@ -799,6 +799,29 @@ nav {
   color: #333D4B;
 }
 
+.summary {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.summary__order {
+  text-align: left;
+  background-color: #333D4B;
+  color: #FEFCF7;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary__heading {
+  opacity: .5;
+  text-transform: uppercase;
+}
+
+.summary__text {
+  color: #0E8784;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;

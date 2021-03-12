@@ -1,0 +1,22 @@
+.summary {
+  margin-top: 6rem;
+  text-align: center;
+
+  &__order {
+    text-align: left;
+    background-color: $dark-grey-blue;
+    color: $light-cream;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    opacity: .5;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $dark-cyan;
+  }
+}
