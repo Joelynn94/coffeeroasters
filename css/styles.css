@@ -441,7 +441,7 @@ nav {
 }
 
 .light-text {
-  color: #FEFCF7;
+  color: #FEFCF7 !important;
 }
 
 .dark-bg {
