@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector(".nav__mobile-btn");
 const navMenu = document.querySelector(".nav__mobile-menu");
 const toggleBtnImg = document.querySelector("#toggleBtnImg");
+const options = document.getElementsByClassName("options");
 
 const preferences = document.getElementsByName("preferences");
 const dataPreference = document.querySelector("#jsPreference");
@@ -44,3 +45,21 @@ loopRadioBtns(beanType, dataBean);
 loopRadioBtns(quantity, dataQuantity);
 loopRadioBtns(grind, dataGrind);
 loopRadioBtns(deliveries, dataDelivery);
+
+for (let i = 0; i < options.length; i++) {
+  options[i].addEventListener("click", (e) => {
+    const target = e.target;
+    console.log(target);
+
+    if (target.type === "radio") {
+      loopRadioBtns(preferences, dataPreference);
+      loopRadioBtns(beanType, dataBean);
+      loopRadioBtns(quantity, dataQuantity);
+      loopRadioBtns(grind, dataGrind);
+      loopRadioBtns(deliveries, dataDelivery);
+    }
+  });
+}
+
+
+
