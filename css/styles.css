@@ -436,6 +436,25 @@ nav {
   display: none;
 }
 
+.question {
+  color: #83888F;
+}
+
+.light-text {
+  color: #FEFCF7;
+}
+
+.dark-bg {
+  background-color: #333D4B;
+  color: #FEFCF7;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.dark-bg p {
+  opacity: .8;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,21 +687,6 @@ nav {
 
 .process__card-heading {
   color: #333D4B;
-}
-
-.dark-bg {
-  background-color: #333D4B;
-  color: #FEFCF7;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.dark-bg p {
-  opacity: .8;
-}
-
-.light-text {
-  color: #FEFCF7;
 }
 
 .footer {
