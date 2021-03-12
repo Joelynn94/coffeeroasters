@@ -840,18 +840,50 @@ nav {
   gap: 1rem;
 }
 
-.options__option {
+.options input[type="radio"] {
+  display: none;
+}
+
+.options input[type="radio"]:not(:disabled) ~ label {
+  cursor: pointer;
+}
+
+.options input[type="radio"]:disabled ~ label {
+  color: #bcc2bf;
+  border-color: #bcc2bf;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: not-allowed;
+}
+
+.options label {
+  display: block;
   background-color: #F4F1EB;
   color: #333D4B;
   border-radius: 1rem;
   padding: 1.5rem 1.5rem;
 }
 
-.options__option h4 {
+.options input[type="radio"]:checked + label {
+  background-color: #0E8784;
+  color: #FEFCF7;
+}
+
+.options input[type="radio"]:focus + label {
+  background-color: #FDD6BA;
+  color: #333D4B;
+}
+
+.options input[type="radio"]:hover + label {
+  background-color: #FDD6BA;
+  color: #333D4B;
+}
+
+.options h4 {
   margin: 0;
 }
 
-.options__option p {
+.options p {
   margin-bottom: 0;
 }
 
