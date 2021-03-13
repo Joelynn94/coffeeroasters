@@ -948,20 +948,22 @@ nav {
   position: relative;
   max-width: 800px;
   max-height: 80vh;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 1rem;
   background: #FEFCF7;
   overflow: auto;
   cursor: default;
 }
 
 .modal__header {
+  z-index: 2;
   color: #FEFCF7;
   margin: 0;
   background-color: #333D4B;
   padding: 2rem;
+  min-height: 0;
 }
 
-.modal__header h2 {
+.modal__header h3 {
   margin: 0;
 }
 
@@ -972,6 +974,10 @@ nav {
 
 .modal__body h4 {
   margin-bottom: 0;
+}
+
+.modal__body footer {
+  text-align: center;
 }
 
 .is-visible {
