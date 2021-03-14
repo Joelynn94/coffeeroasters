@@ -87,7 +87,13 @@ function loopRadioBtns(arr, spanEl) {
     // see if an element is checked 
     if (element.checked) {
       spanEl.textContent = element.value;
-      console.log(element.value);
+      return userOptions = {
+        userPreference: dataPreference.textContent,
+        userBeanType: dataBean.textContent,
+        userQuantity: dataQuantity.textContent,
+        userGrindOption: dataGrind.textContent,
+        userDelivery: dataDelivery.textContent
+      };
     }
   }
 }
@@ -110,9 +116,9 @@ function loopOptionDivs() {
 
       if (target.type === "radio") {
         callLoopRadioBtns();
-        saveToLocalStorage(userOptions);
-        getFromLocalStorage();
       };
+      saveToLocalStorage(userOptions);
+      getFromLocalStorage();
     });
   }
 }
