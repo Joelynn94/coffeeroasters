@@ -2,6 +2,13 @@
   background: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $md-breakpoint) {
+    background: url("../../assets/home/tablet/image-hero-coffeepress.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
 }
 
 #aboutBanner {
@@ -20,6 +27,13 @@
     color: $light-cream;
     max-width: 18.75rem;
     margin: 0 auto;
+
+    @media (min-width: $md-breakpoint) {
+      text-align: left;
+      margin: 0;
+      padding: 6.25rem 3.75rem;
+      max-width: 22.75rem;
+    }
 
     p {
       opacity: .8;

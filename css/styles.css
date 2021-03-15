@@ -409,11 +409,21 @@ nav {
   letter-spacing: 1px;
 }
 
-@media (max-width: 48rem) {
+@media (min-width: 0) {
   .nav__link {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .nav__link {
+    font-family: 'Barlow', sans-serif;
+    font-size: .75rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }
 
@@ -468,6 +478,12 @@ nav {
           align-items: center;
 }
 
+.nav__logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .nav__logo a {
   padding: 1rem;
   display: block;
@@ -483,6 +499,21 @@ nav {
   }
 }
 
+.nav__menu {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
 .nav__mobile-menu {
   position: absolute;
   top: 5rem;
@@ -490,11 +521,17 @@ nav {
   right: 0;
   width: 100%;
   z-index: 1;
-  min-height: 20remrem;
+  min-height: 20rem;
   height: 100vh;
   background: #fefcf7;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(254, 252, 247, 0.5)), color-stop(55%, #fefcf7));
   background: linear-gradient(0deg, rgba(254, 252, 247, 0.5) 0%, #fefcf7 55%);
+}
+
+@media (min-width: 48rem) {
+  .nav__mobile-menu {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -515,11 +552,33 @@ nav {
   margin-top: 3rem;
 }
 
+@media (min-width: 48rem) {
+  .nav__list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+}
+
 .nav__item {
-  width: 100%;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 48rem) {
+  .nav__item {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .nav__link {
@@ -530,12 +589,24 @@ nav {
   display: block;
 }
 
+@media (min-width: 48rem) {
+  .nav__link {
+    color: #83888F;
+  }
+}
+
 .nav__mobile-btn {
   margin-top: .45rem;
   padding: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (min-width: 48rem) {
+  .nav__mobile-btn {
+    display: none;
+  }
 }
 
 .nav .container {
@@ -559,6 +630,15 @@ nav {
   background-size: cover;
 }
 
+@media (min-width: 48rem) {
+  #homeBanner {
+    background: url("../../assets/home/tablet/image-hero-coffeepress.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
 #aboutBanner {
   background: url("../../assets/about/mobile/image-hero-whitecup.jpg");
   background-repeat: no-repeat;
@@ -576,6 +656,15 @@ nav {
   color: #FEFCF7;
   max-width: 18.75rem;
   margin: 0 auto;
+}
+
+@media (min-width: 48rem) {
+  .banner__inner {
+    text-align: left;
+    margin: 0;
+    padding: 6.25rem 3.75rem;
+    max-width: 22.75rem;
+  }
 }
 
 .banner__inner p {

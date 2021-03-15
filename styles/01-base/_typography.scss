@@ -41,11 +41,21 @@ nav {
   letter-spacing: 1px;
 }
 
-@media (max-width: 48rem) {
+@media (min-width: 0) {
   .nav__link {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: $md-breakpoint) {
+  .nav__link {
+    font-family: 'Barlow', sans-serif;
+    font-size: .75rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }
 
