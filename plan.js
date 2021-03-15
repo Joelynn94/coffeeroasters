@@ -1,9 +1,7 @@
-const menuBtn = document.querySelector(".nav__mobile-btn");
-const navMenu = document.querySelector(".nav__mobile-menu");
-const toggleBtnImg = document.querySelector("#toggleBtnImg");
 const options = document.getElementsByClassName("options");
 const trigger = document.querySelector("[data-open]");
 const modal = document.querySelector(".modal");
+const coffeePrice = document.querySelectorAll("[data-price]");
 
 // input radio names 
 const preferences = document.getElementsByName("preferences");
@@ -25,17 +23,6 @@ const modalDataBean = document.querySelector(".jsModalBean");
 const modalDataQuantity = document.querySelector(".jsModalQuantity");
 const modalDataGrind = document.querySelector(".jsModalGrind");
 const modalDataDelivery = document.querySelector(".jsModalDelivery");
-
-function toggleMenuBtn() {
-  // toggle the class "close"
-  navMenu.classList.toggle("close");
-  // change image 
-  if (toggleBtnImg.src.match("./assets/shared/mobile/icon-hamburger.svg")) {
-    toggleBtnImg.src = "./assets/shared/mobile/icon-close.svg";
-  } else if (toggleBtnImg.src.match("./assets/shared/mobile/icon-close.svg")) {
-    toggleBtnImg.src = "./assets/shared/mobile/icon-hamburger.svg";
-  }
-}
 
 let userOptions = {};
 
@@ -80,6 +67,12 @@ function getFromLocalStorage() {
 
 getFromLocalStorage();
 
+function getShipmentPrice() {
+  coffeePrice.forEach((item) => {
+    console.log(item.dataset.price);
+  });
+}
+
 function loopRadioBtns(arr, spanEl) {
   for (let i = 0; i < arr.length; i++) {
     const element = arr[i];
@@ -87,6 +80,7 @@ function loopRadioBtns(arr, spanEl) {
     // see if an element is checked 
     if (element.checked) {
       spanEl.textContent = element.value;
+
       return userOptions = {
         userPreference: dataPreference.textContent,
         userBeanType: dataBean.textContent,
@@ -130,6 +124,15 @@ function toggleModal() {
 
   if (modal.classList.contains("is-visible")) {
     getFromLocalStorage();
+    for (let i = 0; i < options.length; i++) {
+      options[i].addEventListener("click", (e) => {
+        const target = e.target;
+
+        if (target.type === "radio") {
+          console.log(coffeePrice.dataset.price);
+        };
+      });
+    }
   } else {
     return;
   }
@@ -141,7 +144,5 @@ function modalClick(e) {
   }
 }
 
-menuBtn.addEventListener("click", toggleMenuBtn);
 trigger.addEventListener("click", toggleModal);
 window.addEventListener("click", modalClick);
-
