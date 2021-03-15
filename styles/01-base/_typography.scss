@@ -9,9 +9,21 @@ h1, h2, h3, h4, .alt-title {
 }
 
 .alt-title {
-  font-size: 9.375rem;
+  font-size: 3.375rem;
   line-height: 4.5rem;
   text-transform: lowercase;
+
+  @media (min-width: $sm-breakpoint) {
+    font-size: 4.375rem;
+  }
+
+  @media (min-width: $md-breakpoint) {
+    font-size: 6.375rem;
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    font-size: 9.375rem;
+  }
 }
 
 h1 {

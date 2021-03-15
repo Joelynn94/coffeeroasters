@@ -1,14 +1,23 @@
 .products {
   margin-top: 6rem;
   text-align: center;
-  display: grid;
-  gap: 3rem;
+
+  &__grid {
+    @media (min-width: $md-breakpoint) {
+      display: grid;
+      gap: 3rem;
+    }
+  }
 
   &__heading {
     background: linear-gradient( #979797, rgb(254,252,247) 110%);
     background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (min-width: $md-breakpoint) {
+      margin-bottom: -1rem;
+    }
   }
 
   &__product-name {
@@ -17,5 +26,18 @@
 
   &__product-description {
     color: $dark-grey-blue;
+  }
+
+  &__product {
+    @media (min-width: $md-breakpoint) {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-details {
+      text-align: left;
+      padding-top: 1rem;
+    }
   }
 }
