@@ -38,6 +38,14 @@
     display: flex;
     flex-direction: column;
 
+    @media (min-width: $md-breakpoint) {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      text-align: left;
+    }
+
     &-img {
       padding: 1rem;
       margin: 0 auto;
@@ -45,7 +53,24 @@
 
     &-text {
       margin: 0 auto;
-      max-width: 13rem;
+      max-width: 15rem;
+
+      @media (min-width: $md-breakpoint) {
+        text-align: left;
+        max-width: 30rem;
+      }
+    }
+
+    &-details {
+      @media (min-width: $md-breakpoint) {
+        flex: 3;
+      }
+
+      h4 {
+        @media (min-width: $md-breakpoint) {
+          margin: 0 0 1rem 0;
+        }
+      }
     }
   }
 }
