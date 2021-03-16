@@ -56,6 +56,7 @@
     margin-top: 3rem;
 
     @media (min-width: $md-breakpoint) {
+      padding-right: 1rem;
       justify-content: flex-end;
       flex-direction: row;
       margin: 0;

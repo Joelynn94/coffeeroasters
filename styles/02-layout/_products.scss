@@ -6,6 +6,7 @@
     @media (min-width: $md-breakpoint) {
       display: grid;
       gap: 3rem;
+      padding: 3rem;
     }
   }
 
@@ -16,7 +17,7 @@
     -webkit-text-fill-color: transparent;
 
     @media (min-width: $md-breakpoint) {
-      margin-bottom: -1rem;
+      margin-bottom: -4rem;
     }
   }
 
@@ -38,9 +39,17 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
+    &-img {
+      max-height: 15rem;
+      margin: 0 auto;
+    }
+
     &-details {
       text-align: center;
-      padding-top: 1rem;
+
+      @media (min-width: $md-breakpoint) {
+        text-align: left;
+      }
     }
   }
 }

@@ -13,6 +13,11 @@
   &__inner {
     padding: 1.5rem;
 
+    @media (min-width: $md-breakpoint) {
+      max-width: 33rem;
+      margin: 0 auto;
+    }
+
     p {
       opacity: .8;
       color: $light-cream;
@@ -29,6 +34,10 @@
     background-size: 105% 50%;
     background-position: top;
     border-bottom-left-radius: 1rem;
+
+    @media (min-width: $md-breakpoint) {
+      padding: 1.5rem 3rem 3rem 3rem;
+    }
   }
 
   &__reason {
@@ -63,7 +72,7 @@
 
     &-details {
       @media (min-width: $md-breakpoint) {
-        flex: 3;
+        max-width: 30rem;
       }
 
       h4 {
