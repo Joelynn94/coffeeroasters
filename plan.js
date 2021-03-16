@@ -23,6 +23,7 @@ const modalDataBean = document.querySelector(".jsModalBean");
 const modalDataQuantity = document.querySelector(".jsModalQuantity");
 const modalDataGrind = document.querySelector(".jsModalGrind");
 const modalDataDelivery = document.querySelector(".jsModalDelivery");
+const checkoutPrice = document.querySelector("#jsCheckoutPrice");
 
 let userOptions = {};
 
@@ -86,7 +87,8 @@ function loopRadioBtns(arr, spanEl) {
         userBeanType: dataBean.textContent,
         userQuantity: dataQuantity.textContent,
         userGrindOption: dataGrind.textContent,
-        userDelivery: dataDelivery.textContent
+        userDelivery: dataDelivery.textContent,
+        userCost: `${element.dataset.price} / mo`
       };
     }
   }
@@ -124,15 +126,7 @@ function toggleModal() {
 
   if (modal.classList.contains("is-visible")) {
     getFromLocalStorage();
-    for (let i = 0; i < options.length; i++) {
-      options[i].addEventListener("click", (e) => {
-        const target = e.target;
-
-        if (target.type === "radio") {
-          console.log(coffeePrice.dataset.price);
-        };
-      });
-    }
+    checkoutPrice.textContent = userOptions.userCost;
   } else {
     return;
   }

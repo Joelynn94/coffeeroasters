@@ -89,132 +89,162 @@
 
   <main>
     <div class="container">
-      <section class="preferences">
+      <section class="preferences mb-section">
         <h4 class="question">How do you drink your coffee?</h4>
 
         <div class="options">
-          <input id="capsule" data-preference="Capsule" name="preferences" type="radio" value="Capsule" checked>
-          <label for="capsule">
-            <h4>Capsule</h4>
-            <p>Compatible with Nespresso systems and similar brewers</p>
-          </label>
+          <div class="options__option">
+            <input id="capsule" data-preference="Capsule" name="preferences" type="radio" value="Capsule" checked>
+            <label for="capsule">
+              <h4>Capsule</h4>
+              <p>Compatible with Nespresso systems and similar brewers</p>
+            </label>
+          </div>
 
-          <input id="filter" data-preference="Filter" name="preferences" type="radio" value="Filter">
-          <label for="filter">
-            <h4>Filter</h4>
-            <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-          </label>
+          <div class="options__option">
+            <input id="filter" data-preference="Filter" name="preferences" type="radio" value="Filter">
+            <label for="filter">
+              <h4>Filter</h4>
+              <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+            </label>
+          </div>
 
-          <input id="espresso" data-preference="Espresso" name="preferences" type="radio" value="Espresso">
-          <label for="espresso">
-            <h4>Espresso</h4>
-            <p>Dense and finely ground beans for an intense, flavorful experience</p>
-          </label>
+          <div class="options__option">
+            <input id="espresso" data-preference="Espresso" name="preferences" type="radio" value="Espresso">
+            <label for="espresso">
+              <h4>Espresso</h4>
+              <p>Dense and finely ground beans for an intense, flavorful experience</p>
+            </label>
+          </div>
+
         </div>
-
       </section>
 
-      <section class="bean">
+      <section class="bean mb-section">
         <h4 class="question">What type of coffee?</h4>
 
         <div class="options">
-          <input id="single" data-bean="Single" name="beanType" type="radio" value="Single" checked>
-          <label for="single">
-            <h4>Single origin</h4>
-            <p>Distinct, high quality coffee from a specific family-owned farm</p>
-          </label>
+          <div class="options__option">
+            <input id="single" data-bean="Single" name="beanType" type="radio" value="Single" checked>
+            <label for="single">
+              <h4>Single origin</h4>
+              <p>Distinct, high quality coffee from a specific family-owned farm</p>
+            </label>
+          </div>
 
-          <input id="decaf" data-bean="Decaf" name="beanType" type="radio" value="Decaf">
-          <label for="decaf">
-            <h4>Decaf</h4>
-            <p>Just like regular coffee, except the caffeine has been removed</p>
-          </label>
+          <div class="options__option">
+            <input id="decaf" data-bean="Decaf" name="beanType" type="radio" value="Decaf">
+            <label for="decaf">
+              <h4>Decaf</h4>
+              <p>Just like regular coffee, except the caffeine has been removed</p>
+            </label>
+          </div>
 
-          <input id="blended" data-bean="Blended" name="beanType" type="radio" value="Blended">
-          <label for="blended">
-            <h4>Blended</h4>
-            <p>Combination of two or three dark roasted beans of organic coffees</p>
-          </label>
+          <div class="options__option">
+            <input id="blended" data-bean="Blended" name="beanType" type="radio" value="Blended">
+            <label for="blended">
+              <h4>Blended</h4>
+              <p>Combination of two or three dark roasted beans of organic coffees</p>
+            </label>
+          </div>
+
         </div>
-
       </section>
 
-      <section class="quantitiy">
+      <section class="quantitiy mb-section">
         <h4 class="question">How much would you like?</h4>
 
         <div class="options">
-          <input id="250g" data-quantitiy="250g" name="quantity" type="radio" value="250g" checked>
-          <label for="250g">
-            <h4>250g</h4>
-            <p>Perfect for the solo drinker. Yields about 12 delicious cups</p>
-          </label>
+          <div class="options__option">
+            <input id="250g" data-quantitiy="250g" name="quantity" type="radio" value="250g" checked>
+            <label for="250g">
+              <h4>250g</h4>
+              <p>Perfect for the solo drinker. Yields about 12 delicious cups</p>
+            </label>
+          </div>
 
-          <input id="500g" data-quantitiy="500g" name="quantity" type="radio" value="500g">
-          <label for="500g">
-            <h4>500g</h4>
-            <p>Perfect option for a couple. Yields about 40 delectable cups</p>
-          </label>
+          <div class="options__option">
+            <input id="500g" data-quantitiy="500g" name="quantity" type="radio" value="500g">
+            <label for="500g">
+              <h4>500g</h4>
+              <p>Perfect option for a couple. Yields about 40 delectable cups</p>
+            </label>
+          </div>
 
-          <input id="1000g" data-quantitiy="1000g" name="quantity" type="radio" value="1000g">
-          <label for="1000g">
-            <h4>1000g</h4>
-            <p>Perfect for offices and events. Yields about 90 delightful cups</p>
-          </label>
+          <div class="options__option">
+            <input id="1000g" data-quantitiy="1000g" name="quantity" type="radio" value="1000g">
+            <label for="1000g">
+              <h4>1000g</h4>
+              <p>Perfect for offices and events. Yields about 90 delightful cups</p>
+            </label>
+          </div>
+
         </div>
-
       </section>
 
-      <section class="grind">
+      <section class="grind mb-section">
         <h4 class="question">Want us to grind them?</h4>
 
         <div class="options">
-          <input id="wholebean" data-grind="Whole bean" name="grindOption" type="radio" value="Whole bean" checked>
-          <label for="wholebean">
-            <h4>Wholebean</h4>
-            <p>Best choice if you cherish the full sensory experience</p>
-          </label>
+          <div class="options__option">
+            <input id="wholebean" data-grind="Whole bean" name="grindOption" type="radio" value="Whole bean" checked>
+            <label for="wholebean">
+              <h4>Wholebean</h4>
+              <p>Best choice if you cherish the full sensory experience</p>
+            </label>
+          </div>
 
-          <input id="filtergrind" data-grind="Filter" name="grindOption" type="radio" value="Filter">
-          <label for="filtergrind">
-            <h4>Filter</h4>
-            <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-          </label>
+          <div class="options__option">
+            <input id="filtergrind" data-grind="Filter" name="grindOption" type="radio" value="Filter">
+            <label for="filtergrind">
+              <h4>Filter</h4>
+              <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+            </label>
+          </div>
 
-          <input id="cafetiére" data-grind="Cafetiére" name="grindOption" type="radio" value="Cafetiére">
-          <label for="cafetiére">
-            <h4>Cafetiére</h4>
-            <p>Course ground beans specially suited for french press coffee</p>
-          </label>
+          <div class="options__option">
+            <input id="cafetiére" data-grind="Cafetiére" name="grindOption" type="radio" value="Cafetiére">
+            <label for="cafetiére">
+              <h4>Cafetiére</h4>
+              <p>Course ground beans specially suited for french press coffee</p>
+            </label>
+          </div>
+
         </div>
-
       </section>
 
-      <section class="deliveries">
+      <section class="deliveries mb-section">
         <h4 class="question">How often should we deliver?</h4>
 
         <div class="options">
-          <input id="everyweek" data-delivery="Every Week" data-price="$14.00" name="deliveries" type="radio"
-            value="Every Week" checked>
-          <label for="everyweek">
-            <h4>Every week</h4>
-            <p>$14.00 per shipment. Includes free first-class shipping</p>
-          </label>
+          <div class="options__option">
+            <input id="everyweek" data-delivery="Every Week" data-price="$14.00" name="deliveries" type="radio"
+              value="Every Week" checked>
+            <label for="everyweek">
+              <h4>Every week</h4>
+              <p>$14.00 per shipment. Includes free first-class shipping</p>
+            </label>
+          </div>
 
-          <input id="every2weeks" data-delivery="Every 2 Weeks" data-price="$17.25" name="deliveries" type="radio"
-            value="Every 2 Weeks">
-          <label for="every2weeks">
-            <h4>Every 2 weeks</h4>
-            <p>$17.25 per shipment. Includes free priority shipping</p>
-          </label>
+          <div class="options__option">
+            <input id="every2weeks" data-delivery="Every 2 Weeks" data-price="$17.25" name="deliveries" type="radio"
+              value="Every 2 Weeks">
+            <label for="every2weeks">
+              <h4>Every 2 weeks</h4>
+              <p>$17.25 per shipment. Includes free priority shipping</p>
+            </label>
+          </div>
 
-          <input id="everymonth" data-delivery="Every Month" data-price="$22.50" name="deliveries" type="radio"
-            value="Every Month">
-          <label for="everymonth">
-            <h4>Every month</h4>
-            <p>$22.50 per shipment. Includes free priority shipping</p>
-          </label>
+          <div class="options__option">
+            <input id="everymonth" data-delivery="Every Month" data-price="$22.50" name="deliveries" type="radio"
+              value="Every Month">
+            <label for="everymonth">
+              <h4>Every month</h4>
+              <p>$22.50 per shipment. Includes free priority shipping</p>
+            </label>
+          </div>
+
         </div>
-
       </section>
 
       <section class="summary">
@@ -254,7 +284,7 @@
         <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription
           discount codes can also be redeemed at the checkout.</p>
         <footer class="modal__mobile-footer">
-          <a href="" class="btn btn-default">Checkout - $ <span id="jsCheckoutPrice"></span> / mo</a>
+          <a href="" class="btn btn-default">Checkout - $ <span id="jsCheckoutPrice"></span></a>
         </footer>
       </section>
     </div>
@@ -285,8 +315,8 @@
           </a>
         </li>
         <li>
-          <a href="">
-            <img src="./assets/shared/desktop/icon-instagram.svg" alt="Insagram link to Joseph Lynn's profile">
+          <a href="" id="instagram">
+
           </a>
         </li>
       </ul>

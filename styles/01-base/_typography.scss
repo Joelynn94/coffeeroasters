@@ -71,6 +71,14 @@ nav {
   }
 }
 
+.nav__link:hover {
+  color: $dark-grey-blue;
+}
+
+.footer__link:hover {
+  color: $light-cream;
+}
+
 .process__card-number {
   font-family: 'Fraunces', serif;
 }

@@ -445,6 +445,14 @@ nav {
   }
 }
 
+.nav__link:hover {
+  color: #333D4B;
+}
+
+.footer__link:hover {
+  color: #FEFCF7;
+}
+
 .process__card-number {
   font-family: 'Fraunces', serif;
 }
@@ -489,6 +497,10 @@ nav {
 
 .dark-line {
   margin-top: 4rem;
+}
+
+.mb-section {
+  margin-bottom: 6rem;
 }
 
 .nav {
@@ -999,6 +1011,17 @@ nav {
   display: block;
 }
 
+@media (min-width: 48rem) {
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__link {
   text-decoration: none;
   color: #83888F;
@@ -1024,6 +1047,20 @@ nav {
 .footer__social a {
   display: block;
   padding: 1.25rem;
+}
+
+.footer__social a:hover > img {
+  color: #FDD6BA !important;
+}
+
+.footer #instagram {
+  background-image: url("../../assets/shared/desktop/icon-instagram.svg");
+  background-size: cover;
+}
+
+.footer #instagram:hover {
+  -webkit-filter: invert(93%) sepia(5%) saturate(3428%) hue-rotate(310deg) brightness(102%) contrast(105%);
+          filter: invert(93%) sepia(5%) saturate(3428%) hue-rotate(310deg) brightness(102%) contrast(105%);
 }
 
 .commitment {
@@ -1149,7 +1186,7 @@ nav {
   background-color: #333D4B;
   color: #FEFCF7;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   margin-bottom: 2rem;
 }
 
@@ -1190,6 +1227,10 @@ nav {
   margin-top: 1.5rem;
 }
 
+.btn-default:hover {
+  background-color: #66D2CF;
+}
+
 .btn-main {
   color: #FEFCF7;
   background-color: #66D2CF;
@@ -1201,6 +1242,13 @@ nav {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .options {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .options input[type="radio"] {
@@ -1226,6 +1274,13 @@ nav {
   color: #333D4B;
   border-radius: 1rem;
   padding: 1.5rem 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .options label {
+    height: 8rem;
+    padding: 3.5rem 1.5rem;
+  }
 }
 
 .options input[type="radio"]:checked + label {
