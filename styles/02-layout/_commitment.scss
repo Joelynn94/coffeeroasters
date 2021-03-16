@@ -5,14 +5,28 @@
   gap: 1rem;
   text-align: center;
 
+  @media (min-width: $md-breakpoint) {
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
   h3 {
     color: $dark-grey-blue;
+
+    @media (min-width: $md-breakpoint) {
+      margin-top: 0;
+    }
   }
 
   img {
     border-radius: 1rem;
     max-height: 31rem;
     margin: 0 auto;
+
+    @media (min-width: $md-breakpoint) {
+      height: 31rem;
+    }
   }
 
   p {

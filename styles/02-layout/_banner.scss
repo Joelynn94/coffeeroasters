@@ -15,6 +15,26 @@
   background: url("../../assets/about/mobile/image-hero-whitecup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $md-breakpoint) {
+    background: url("../../assets/about/tablet/image-hero-whitecup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+#planBanner {
+  background: url("../../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $md-breakpoint) {
+    background: url("../../assets/plan/tablet/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
 }
 
 .banner {

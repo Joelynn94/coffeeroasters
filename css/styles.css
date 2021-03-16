@@ -487,6 +487,10 @@ nav {
   opacity: .8;
 }
 
+.dark-line {
+  margin-top: 4rem;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,6 +666,30 @@ nav {
   background: url("../../assets/about/mobile/image-hero-whitecup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 48rem) {
+  #aboutBanner {
+    background: url("../../assets/about/tablet/image-hero-whitecup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+#planBanner {
+  background: url("../../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 48rem) {
+  #planBanner {
+    background: url("../../assets/plan/tablet/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
 }
 
 .banner {
@@ -874,7 +902,7 @@ nav {
 }
 
 .process__line {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   display: block;
   height: 2px;
   border-top: 2px solid #FDD6BA;
@@ -885,7 +913,7 @@ nav {
 .process__line-dot {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -.8rem;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -894,12 +922,24 @@ nav {
   margin-top: -.95rem;
 }
 
+.process__line-dot--dark {
+  position: absolute;
+  top: 0;
+  left: -.8rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #0E8784;
+  background-color: transparent;
+  margin-top: -.95rem;
+}
+
 .process__line #circle2 {
-  left: 50%;
+  left: 48%;
 }
 
 .process__line #circle3 {
-  left: 100%;
+  left: 97.5%;
 }
 
 .process__heading {
@@ -995,14 +1035,35 @@ nav {
   text-align: center;
 }
 
+@media (min-width: 48rem) {
+  .commitment {
+    text-align: left;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
 .commitment h3 {
   color: #333D4B;
+}
+
+@media (min-width: 48rem) {
+  .commitment h3 {
+    margin-top: 0;
+  }
 }
 
 .commitment img {
   border-radius: 1rem;
   max-height: 31rem;
   margin: 0 auto;
+}
+
+@media (min-width: 48rem) {
+  .commitment img {
+    height: 31rem;
+  }
 }
 
 .commitment p {
@@ -1021,12 +1082,30 @@ nav {
 .quality img {
   border-radius: 1rem;
   margin-top: -10rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+
+.quality__details {
+  margin: 0 auto;
+  max-width: 36rem;
+  padding-bottom: 3rem;
+}
+
+.quality__details p {
+  opacity: .8;
 }
 
 .locations {
   margin-top: 7.5rem;
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .locations {
+    text-align: left;
+    padding: 0 2rem 0 2rem;
+  }
 }
 
 .locations h4 {
@@ -1037,6 +1116,13 @@ nav {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
+}
+
+@media (min-width: 48rem) {
+  .locations__all-locations {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .locations__location {

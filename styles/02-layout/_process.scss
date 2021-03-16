@@ -10,7 +10,7 @@
   }
 
   &__line {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     display: block;
     height: 2px;
     border-top: 2px solid $pale-orange;
@@ -20,21 +20,33 @@
     &-dot {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -.8rem;
       height: 25px;
       width: 25px;
       border-radius: 50%;
       border: 1px solid $dark-cyan;
       background-color: $light-cream;
       margin-top: -.95rem;
+
+      &--dark {
+        position: absolute;
+        top: 0;
+        left: -.8rem;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1px solid $dark-cyan;
+        background-color: transparent;
+        margin-top: -.95rem;
+      }
     }
 
     #circle2 {
-      left: 50%;
+      left: 48%;
     }
 
     #circle3 {
-      left: 100%;
+      left: 97.5%;
     }
   }
 
