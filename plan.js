@@ -24,6 +24,7 @@ const modalDataQuantity = document.querySelector(".jsModalQuantity");
 const modalDataGrind = document.querySelector(".jsModalGrind");
 const modalDataDelivery = document.querySelector(".jsModalDelivery");
 const checkoutPrice = document.querySelector("#jsCheckoutPrice");
+const checkoutModalPrice = document.querySelector("#jsModalCheckoutPrice");
 
 let userOptions = {};
 
@@ -67,12 +68,6 @@ function getFromLocalStorage() {
 }
 
 getFromLocalStorage();
-
-function getShipmentPrice() {
-  coffeePrice.forEach((item) => {
-    console.log(item.dataset.price);
-  });
-}
 
 function loopRadioBtns(arr, spanEl) {
   for (let i = 0; i < arr.length; i++) {
@@ -127,6 +122,7 @@ function toggleModal() {
   if (modal.classList.contains("is-visible")) {
     getFromLocalStorage();
     checkoutPrice.textContent = userOptions.userCost;
+    checkoutModalPrice.textContent = userOptions.userCost;
   } else {
     return;
   }

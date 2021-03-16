@@ -29,9 +29,11 @@
     }
   }
 
+  &__details {
+    align-self: center;
+  }
+
   p {
     margin-top: 0;
-    // max-width: 31rem;
-    // margin: 0 auto;
   }
 }

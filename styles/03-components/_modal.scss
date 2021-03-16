@@ -17,9 +17,9 @@
 
   &__inner {
     position: relative;
-    max-width: 800px;
+    max-width: 32rem;
     max-height: 80vh;
-    border-radius: 1rem;
+    border-radius: .5rem;
     background: $light-cream;
     overflow: auto;
     cursor: default;
@@ -46,11 +46,27 @@
     h4 {
       margin-bottom: 0;
     }
+  }
 
-    footer {
-      text-align: center;
+  &__footer {
+    text-align: center;
+
+    &--mobile-footer {
+      @media (min-width: $md-breakpoint) {
+        display: none;
+      }
+    }
+  
+    &--large-footer {
+      display: none;
+  
+      @media (min-width: $md-breakpoint) {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
+
 }
 
 .is-visible {

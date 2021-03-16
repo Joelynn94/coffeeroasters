@@ -10,12 +10,16 @@
   }
 
   &__line {
-    margin-left: 1.5rem;
-    display: block;
-    height: 2px;
-    border-top: 2px solid $pale-orange;
-    max-width: 70%;
-    position: relative;
+    display: none;
+
+    @media (min-width: $md-breakpoint) {
+      margin-left: 1.5rem;
+      display: block;
+      height: 2px;
+      border-top: 2px solid $pale-orange;
+      max-width: 70%;
+      position: relative;
+    }
 
     &-dot {
       position: absolute;

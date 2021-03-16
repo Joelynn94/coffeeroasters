@@ -461,6 +461,17 @@ nav {
   font-family: 'Fraunces', serif;
 }
 
+.large-text {
+  margin-top: 1.5rem;
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: #333D4B;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1rem;
+}
+
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -914,12 +925,18 @@ nav {
 }
 
 .process__line {
-  margin-left: 1.5rem;
-  display: block;
-  height: 2px;
-  border-top: 2px solid #FDD6BA;
-  max-width: 70%;
-  position: relative;
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .process__line {
+    margin-left: 1.5rem;
+    display: block;
+    height: 2px;
+    border-top: 2px solid #FDD6BA;
+    max-width: 70%;
+    position: relative;
+  }
 }
 
 .process__line-dot {
@@ -1101,6 +1118,12 @@ nav {
   .commitment img {
     height: 31rem;
   }
+}
+
+.commitment__details {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .commitment p {
@@ -1336,9 +1359,9 @@ nav {
 
 .modal__inner {
   position: relative;
-  max-width: 800px;
+  max-width: 32rem;
   max-height: 80vh;
-  border-radius: 1rem;
+  border-radius: .5rem;
   background: #FEFCF7;
   overflow: auto;
   cursor: default;
@@ -1366,8 +1389,29 @@ nav {
   margin-bottom: 0;
 }
 
-.modal__body footer {
+.modal__footer {
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .modal__footer--mobile-footer {
+    display: none;
+  }
+}
+
+.modal__footer--large-footer {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .modal__footer--large-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .is-visible {
