@@ -17,11 +17,12 @@ h1, h2, h3, h4, .alt-title {
     font-size: 4.375rem;
   }
 
-  @media (min-width: $md-breakpoint) {
+  @media (min-width: $lg-breakpoint) {
     font-size: 6.375rem;
   }
 
-  @media (min-width: $lg-breakpoint) {
+  @media (min-width: $xxl-breakpoint) {
+    height: 6rem;
     font-size: 9.375rem;
   }
 }

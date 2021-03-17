@@ -9,6 +9,13 @@
     background-size: cover;
     background-position: right;
   }
+
+  @media (min-width: $lg-breakpoint) {
+    background: url("../../assets/home/desktop/image-hero-coffeepress.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
 }
 
 #aboutBanner {
@@ -22,6 +29,13 @@
     background-size: cover;
     background-position: right;
   }
+
+  @media (min-width: $lg-breakpoint) {
+    background: url("../../assets/about/desktop/image-hero-whitecup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
 }
 
 #planBanner {
@@ -31,6 +45,13 @@
 
   @media (min-width: $md-breakpoint) {
     background: url("../../assets/plan/tablet/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    background: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

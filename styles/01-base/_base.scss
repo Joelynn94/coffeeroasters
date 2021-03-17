@@ -22,3 +22,9 @@ body {
 button {
   cursor: pointer;
 }
+
+section {
+  @media (min-width: $md-breakpoint) {
+    padding: 0 3.75rem;
+  }
+}

@@ -11,12 +11,20 @@
     gap: 3rem;
   }
 
+  @media (min-width: $lg-breakpoint) {
+    gap: 6rem;
+  }
+
   h3 {
     color: $dark-grey-blue;
 
     @media (min-width: $md-breakpoint) {
       margin-top: 0;
     }
+  }
+
+  picture {
+    display: flex;
   }
 
   img {

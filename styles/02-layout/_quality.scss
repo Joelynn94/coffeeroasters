@@ -3,20 +3,50 @@
   color: $light-cream;
   background-color: $dark-grey-blue;
   border-radius: 1rem;
-  padding: 2rem;
   text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
+  @media (min-width: $lg-breakpoint) {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
 
   img {
     border-radius: 1rem;
     margin-top: -10rem;
     margin-bottom: 3rem;
     width: 90%;
+
+    @media (min-width: $lg-breakpoint) {
+      margin-top: -5rem;
+    }
+
+    @media (min-width: $xl-breakpoint) {
+      margin-top: -8rem;
+    }
+  }
+
+  picture {
+    @media (min-width: $lg-breakpoint) {
+      &:nth-of-type(1) {
+        order: 2;
+      }
+    }
   }
 
   &__details {
     margin: 0 auto;
     max-width: 36rem;
-    padding-bottom: 3rem;
+    padding: 2rem 3.75rem;
+
+    @media (min-width: $md-breakpoint) {
+      max-width: 48rem;
+    }
+
+    @media (min-width: $lg-breakpoint) {
+      text-align: left;
+    }
 
     p {
       opacity: .8;
