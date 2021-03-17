@@ -3,6 +3,11 @@
   padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $lg-breakpoint) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
 }
 
 .open {

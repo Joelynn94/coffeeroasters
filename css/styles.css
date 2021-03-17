@@ -520,6 +520,13 @@ nav {
   margin-left: auto;
 }
 
+@media (min-width: 62rem) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
 .open {
   display: block;
 }
@@ -576,6 +583,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 3rem;
 }
 
 .nav__logo {
@@ -859,8 +867,8 @@ nav {
 }
 
 .products__heading {
-  background: -webkit-gradient(linear, left top, left bottom, from(#979797), color-stop(110%, #fefcf7));
-  background: linear-gradient(#979797, #fefcf7 110%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5c5c5), color-stop(110%, #fefcf7));
+  background: linear-gradient(#c5c5c5, #fefcf7 110%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
