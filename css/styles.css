@@ -782,12 +782,18 @@ nav {
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 90rem) {
   #planBanner {
     background: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+  }
+}
+
+@media (min-width: 62rem) {
+  #planBanner .banner__inner {
+    max-width: 50%;
   }
 }
 
@@ -808,7 +814,7 @@ nav {
     text-align: left;
     margin: 0;
     padding: 6.25rem 3.75rem;
-    max-width: 58%;
+    max-width: 55%;
   }
 }
 
