@@ -44,7 +44,7 @@
   <div class="container">
     <section class="banner" id="planBanner">
       <div class="banner__inner">
-        <h2>Create a plan</h2>
+        <h1>Create a plan</h1>
         <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from
           around the globe delivered fresh to your door.
         </p>
@@ -87,11 +87,30 @@
 
   </section>
 
-  <main>
+  <main class="plan__grid">
+    <div class="plan__links" id="jsPlanLinks">
+      <ul>
+        <li>
+          <a class="plan__link" href="#preferences"><span class="plan__number">01</span> Preferences</a>
+        </li>
+        <li>
+          <a class="plan__link" href="#bean"><span class="plan__number">02</span> Bean Type</a>
+        </li>
+        <li>
+          <a class="plan__link" href="#quantity"><span class="plan__number">03</span> Quantity</a>
+        </li>
+        <li>
+          <a class="plan__link" href="#grind"><span class="plan__number">04</span> Grind Option</a>
+        </li>
+        <li>
+          <a class="plan__link" href="#deliveries"><span class="plan__number">05</span> Deliveries</a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-      <section class="preferences mb-section">
+      <section id="preferences" class="preferences mb-section">
         <h4 class="question">How do you drink your coffee?</h4>
-
+        
         <div class="options">
           <div class="options__option">
             <input id="capsule" data-preference="Capsule" name="preferences" type="radio" value="Capsule" checked>
@@ -120,7 +139,7 @@
         </div>
       </section>
 
-      <section class="bean mb-section">
+      <section id="bean" class="bean mb-section">
         <h4 class="question">What type of coffee?</h4>
 
         <div class="options">
@@ -151,12 +170,12 @@
         </div>
       </section>
 
-      <section class="quantitiy mb-section">
+      <section id="quantity" class="quantity mb-section">
         <h4 class="question">How much would you like?</h4>
 
         <div class="options">
           <div class="options__option">
-            <input id="250g" data-quantitiy="250g" name="quantity" type="radio" value="250g" checked>
+            <input id="250g" data-quantity="250g" name="quantity" type="radio" value="250g" checked>
             <label for="250g">
               <h4>250g</h4>
               <p>Perfect for the solo drinker. Yields about 12 delicious cups</p>
@@ -164,7 +183,7 @@
           </div>
 
           <div class="options__option">
-            <input id="500g" data-quantitiy="500g" name="quantity" type="radio" value="500g">
+            <input id="500g" data-quantity="500g" name="quantity" type="radio" value="500g">
             <label for="500g">
               <h4>500g</h4>
               <p>Perfect option for a couple. Yields about 40 delectable cups</p>
@@ -172,7 +191,7 @@
           </div>
 
           <div class="options__option">
-            <input id="1000g" data-quantitiy="1000g" name="quantity" type="radio" value="1000g">
+            <input id="1000g" data-quantity="1000g" name="quantity" type="radio" value="1000g">
             <label for="1000g">
               <h4>1000g</h4>
               <p>Perfect for offices and events. Yields about 90 delightful cups</p>
@@ -182,7 +201,7 @@
         </div>
       </section>
 
-      <section class="grind mb-section">
+      <section id="grind" class="grind mb-section">
         <h4 class="question">Want us to grind them?</h4>
 
         <div class="options">
@@ -213,7 +232,7 @@
         </div>
       </section>
 
-      <section class="deliveries mb-section">
+      <section id="deliveries" class="deliveries mb-section">
         <h4 class="question">How often should we deliver?</h4>
 
         <div class="options">

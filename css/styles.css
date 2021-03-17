@@ -368,7 +368,22 @@ button {
 
 @media (min-width: 48rem) {
   section {
+    padding: 0 1.75rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  section {
     padding: 0 3.75rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .plan__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
   }
 }
 
@@ -408,8 +423,14 @@ h1, h2, h3, h4, .alt-title {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   line-height: 4.5rem;
+}
+
+@media (min-width: 62rem) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
 h2 {
@@ -479,6 +500,11 @@ nav {
   margin-right: 1rem;
 }
 
+.plan__links,
+.plan__number {
+  font-family: 'Fraunces', serif;
+}
+
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -509,6 +535,12 @@ nav {
   border-radius: 1rem;
 }
 
+@media (min-width: 62rem) {
+  .dark-bg {
+    padding: 4rem;
+  }
+}
+
 .dark-bg p {
   opacity: .8;
 }
@@ -519,6 +551,10 @@ nav {
 
 .mb-section {
   margin-bottom: 6rem;
+}
+
+.active {
+  color: #333D4B;
 }
 
 .nav {
@@ -692,7 +728,7 @@ nav {
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   #homeBanner {
     background: url("../../assets/home/desktop/image-hero-coffeepress.jpg");
     background-repeat: no-repeat;
@@ -716,7 +752,7 @@ nav {
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   #aboutBanner {
     background: url("../../assets/about/desktop/image-hero-whitecup.jpg");
     background-repeat: no-repeat;
@@ -740,7 +776,7 @@ nav {
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
   #planBanner {
     background: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
     background-repeat: no-repeat;
@@ -758,7 +794,6 @@ nav {
   text-align: center;
   padding: 6.25rem 1.5rem;
   color: #FEFCF7;
-  max-width: 18.75rem;
   margin: 0 auto;
 }
 
@@ -767,7 +802,7 @@ nav {
     text-align: left;
     margin: 0;
     padding: 6.25rem 3.75rem;
-    max-width: 22.75rem;
+    max-width: 58%;
   }
 }
 
@@ -1221,13 +1256,13 @@ nav {
 
 .commitment img {
   border-radius: 1rem;
-  max-height: 31rem;
+  max-height: 32rem;
   margin: 0 auto;
 }
 
 @media (min-width: 48rem) {
   .commitment img {
-    height: 31rem;
+    height: 32rem;
   }
 }
 
@@ -1269,12 +1304,16 @@ nav {
 
 @media (min-width: 62rem) {
   .quality img {
+    height: 27rem;
+    width: 100%;
     margin-top: -5rem;
   }
 }
 
 @media (min-width: 75rem) {
   .quality img {
+    width: 90%;
+    max-height: 40rem;
     margin-top: -8rem;
   }
 }
@@ -1480,6 +1519,64 @@ nav {
 
 .options p {
   margin-bottom: 0;
+}
+
+.plan__links {
+  display: none;
+  padding: 2rem 3.75rem;
+}
+
+@media (min-width: 75rem) {
+  .plan__links {
+    display: block;
+  }
+}
+
+.plan__links li {
+  opacity: .8;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #83888F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan__links li a:hover {
+  color: #333D4B;
+}
+
+.plan__links li .plan__number:hover {
+  color: #83888F;
+}
+
+.plan__links li:last-child {
+  border-bottom: none;
+}
+
+.plan__links li:hover {
+  opacity: 1;
+}
+
+.plan__links a {
+  font-size: 1.15rem;
+  display: block;
+  text-decoration: none;
+  color: #83888F;
+}
+
+@media (min-width: 90rem) {
+  .plan__links a {
+    font-size: 1.5rem;
+  }
+}
+
+.plan__links .plan__number {
+  padding: .5rem;
+  color: #83888F;
 }
 
 .modal {

@@ -1,0 +1,50 @@
+.plan__links {
+  display: none;
+  padding: 2rem 3.75rem;
+
+  @media (min-width: $xl-breakpoint) {
+    display: block;
+  }
+
+  li {
+    opacity: .8;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $grey;
+    display: flex;
+    align-items: center;
+
+    a:hover {
+      color: $dark-grey-blue;
+    }
+
+    .plan__number:hover {
+      color: $grey;
+    }
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  li:hover {
+    opacity: 1;
+  }
+
+  a {
+    font-size: 1.15rem;
+    display: block;
+    text-decoration: none;
+    color: $grey;
+
+    @media (min-width: $xxl-breakpoint) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .plan__number {
+    padding: .5rem;
+    color: $grey;
+  }
+
+}

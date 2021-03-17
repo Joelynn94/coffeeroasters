@@ -10,7 +10,7 @@
     background-position: right;
   }
 
-  @media (min-width: $lg-breakpoint) {
+  @media (min-width: $xl-breakpoint) {
     background: url("../../assets/home/desktop/image-hero-coffeepress.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@
     background-position: right;
   }
 
-  @media (min-width: $lg-breakpoint) {
+  @media (min-width: $xl-breakpoint) {
     background: url("../../assets/about/desktop/image-hero-whitecup.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +50,7 @@
     background-position: right;
   }
 
-  @media (min-width: $lg-breakpoint) {
+  @media (min-width: $xl-breakpoint) {
     background: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,14 +66,13 @@
     text-align: center;
     padding: 6.25rem 1.5rem;
     color: $light-cream;
-    max-width: 18.75rem;
     margin: 0 auto;
 
     @media (min-width: $md-breakpoint) {
       text-align: left;
       margin: 0;
       padding: 6.25rem 3.75rem;
-      max-width: 22.75rem;
+      max-width: 58%;
     }
 
     p {

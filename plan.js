@@ -1,7 +1,7 @@
 const options = document.getElementsByClassName("options");
 const trigger = document.querySelector("[data-open]");
 const modal = document.querySelector(".modal");
-const coffeePrice = document.querySelectorAll("[data-price]");
+const planLinks = document.getElementsByClassName("plan__link")
 
 // input radio names 
 const preferences = document.getElementsByName("preferences");
@@ -16,6 +16,7 @@ const dataBean = document.querySelector(".jsBean");
 const dataQuantity = document.querySelector(".jsQuantity");
 const dataGrind = document.querySelector(".jsGrind");
 const dataDelivery = document.querySelector(".jsDelivery");
+const coffeePrice = document.querySelectorAll("[data-price]");
 
 // modal span elements 
 const modalDataPreference = document.querySelector(".jsModalPreference");
@@ -116,6 +117,30 @@ function loopOptionDivs() {
 
 loopOptionDivs();
 
+function setActiveClass() {
+  for (let i = 0; i < planLinks.length; i++) {
+    planLinks[i].addEventListener("click", (e) => {
+      const target = e.target
+      const currentLink = planLinks[i]
+
+      console.log(currentLink)
+
+      
+      if (target == planLinks[i]) {
+        console.log(currentLink)
+        currentLink.classList.add("active")
+      } 
+      if (target !== currentLink) {
+        currentLink.classList.remove("active")
+      }
+      
+
+    })
+  }
+}
+
+setActiveClass()
+
 function toggleModal() {
   modal.classList.toggle("is-visible");
 
@@ -134,5 +159,6 @@ function modalClick(e) {
   }
 }
 
+setActiveClass()
 trigger.addEventListener("click", toggleModal);
 window.addEventListener("click", modalClick);

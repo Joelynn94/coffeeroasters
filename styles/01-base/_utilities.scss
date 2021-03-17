@@ -27,6 +27,10 @@
   padding: 1rem;
   border-radius: 1rem;
 
+  @media (min-width: $lg-breakpoint) {
+    padding: 4rem;
+  }
+
   p {
     opacity: .8;
   }
@@ -38,4 +42,8 @@
 
 .mb-section {
   margin-bottom: 6rem;
+}
+
+.active {
+  color: $dark-grey-blue;
 }

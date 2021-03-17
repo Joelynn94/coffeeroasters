@@ -25,6 +25,17 @@ button {
 
 section {
   @media (min-width: $md-breakpoint) {
+    padding: 0 1.75rem;
+  }
+
+  @media (min-width: $lg-breakpoint) {
     padding: 0 3.75rem;
+  }
+}
+
+.plan__grid {
+  @media (min-width: $xl-breakpoint) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
 }

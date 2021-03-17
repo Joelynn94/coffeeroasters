@@ -28,8 +28,12 @@ h1, h2, h3, h4, .alt-title {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   line-height: 4.5rem;
+
+  @media (min-width: $lg-breakpoint) {
+    font-size: 4.5rem;
+  }
 }
 
 h2 {
@@ -95,4 +99,9 @@ nav {
   color: $dark-grey-blue;
   align-self: center;
   margin-right: 1rem;
+}
+
+.plan__links,
+.plan__number {
+  font-family: 'Fraunces', serif;
 }
