@@ -1,7 +1,7 @@
 const options = document.getElementsByClassName("options");
 const trigger = document.querySelector("[data-open]");
 const modal = document.querySelector(".modal");
-const planLinks = document.getElementsByClassName("plan__link")
+const planItems = document.getElementsByClassName("plan__item")
 
 // input radio names 
 const preferences = document.getElementsByName("preferences");
@@ -117,29 +117,24 @@ function loopOptionDivs() {
 
 loopOptionDivs();
 
-function setActiveClass() {
-  for (let i = 0; i < planLinks.length; i++) {
-    planLinks[i].addEventListener("click", (e) => {
-      const target = e.target
-      const currentLink = planLinks[i]
+for(let i = 0; i < planItems.length; i++) {
+  const element = planItems[i];
+  element.addEventListener("click", () => {
+    const current = document.getElementsByClassName("active")
+    
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace("plan__item active", "plan__item");
+    }
 
-      console.log(currentLink)
-
-      
-      if (target == planLinks[i]) {
-        console.log(currentLink)
-        currentLink.classList.add("active")
-      } 
-      if (target !== currentLink) {
-        currentLink.classList.remove("active")
-      }
-      
-
-    })
-  }
+    // Add the active class to the current/clicked li
+    element.classList.toggle("active")
+    console.log(current)
+  })
 }
 
-setActiveClass()
+
+
 
 function toggleModal() {
   modal.classList.toggle("is-visible");
@@ -159,6 +154,5 @@ function modalClick(e) {
   }
 }
 
-setActiveClass()
 trigger.addEventListener("click", toggleModal);
 window.addEventListener("click", modalClick);

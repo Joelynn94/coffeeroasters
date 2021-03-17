@@ -561,6 +561,10 @@ nav {
   color: #333D4B;
 }
 
+.active .plan__Link {
+  color: #333D4B;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
