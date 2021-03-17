@@ -39,19 +39,11 @@
       color: $light-cream;
     }
 
-    input[type="radio"]:focus + label {
-      background-color: $dark-cyan;
-      color: $light-cream;
-    }
-
-    input[type="radio"]:active + label {
-      background-color: $dark-cyan;
-      color: $light-cream;
-    }
-
-    input[type="radio"]:hover + label {
-      background-color: $pale-orange;
-      color: $dark-grey-blue;
+    @media (min-width: $lg-breakpoint) {
+      input[type="radio"]:hover + label {
+        background-color: $pale-orange;
+        color: $dark-grey-blue;
+      }
     }
 
     h4 {
