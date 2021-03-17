@@ -1388,6 +1388,12 @@ nav {
   position: relative;
 }
 
+@media (min-width: 62rem) {
+  .summary {
+    text-align: right;
+  }
+}
+
 .summary__order {
   text-align: left;
   background-color: #333D4B;

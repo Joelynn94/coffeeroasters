@@ -3,6 +3,10 @@
   text-align: center;
   position: relative;
 
+  @media (min-width: $lg-breakpoint) {
+    text-align: right;
+  }
+
   &__order {
     text-align: left;
     background-color: $dark-grey-blue;
@@ -20,4 +24,5 @@
   &__text {
     color: $dark-cyan;
   }
+
 }

@@ -38,21 +38,33 @@ function saveToLocalStorage(obj) {
   localStorage.setItem('userOptions', userOptionsStringify);
 }
 
-function renderOrderSummary(obj) {
-  dataPreference.textContent = obj.userPreference;
-  dataBean.textContent = obj.userBeanType;
-  dataQuantity.textContent = obj.userQuantity;
-  dataGrind.textContent = obj.userGrindOption;
-  dataDelivery.textContent = obj.userDelivery;
+function loopOptionDivs() {
+  for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", (e) => {
+      const target = e.target;
+      console.log(target);
+
+      if (target.type === "radio") {
+        callLoopRadioBtns();
+      };
+      saveToLocalStorage(userOptions);
+      getFromLocalStorage();
+    });
+  }
 }
 
-function renderModalOrderSummary(obj) {
-  modalDataPreference.textContent = obj.userPreference;
-  modalDataBean.textContent = obj.userBeanType;
-  modalDataQuantity.textContent = obj.userQuantity;
-  modalDataGrind.textContent = obj.userGrindOption;
-  modalDataDelivery.textContent = obj.userDelivery;
+loopOptionDivs()
+
+function callLoopRadioBtns() {
+  loopRadioBtns(preferences, dataPreference);
+  loopRadioBtns(beanType, dataBean);
+  loopRadioBtns(quantity, dataQuantity);
+  loopRadioBtns(grind, dataGrind);
+  loopRadioBtns(deliveries, dataDelivery);
 }
+
+callLoopRadioBtns();
+
 
 function getFromLocalStorage() {
   // turn the userOptions back into an object 
@@ -62,10 +74,6 @@ function getFromLocalStorage() {
   if (userOptionsObj !== null) {
     userOptions = userOptionsObj;
   }
-
-  // render the order summary
-  renderOrderSummary(userOptionsObj);
-  renderModalOrderSummary(userOptionsObj);
 }
 
 getFromLocalStorage();
@@ -90,32 +98,7 @@ function loopRadioBtns(arr, spanEl) {
   }
 }
 
-function callLoopRadioBtns() {
-  loopRadioBtns(preferences, dataPreference);
-  loopRadioBtns(beanType, dataBean);
-  loopRadioBtns(quantity, dataQuantity);
-  loopRadioBtns(grind, dataGrind);
-  loopRadioBtns(deliveries, dataDelivery);
-}
 
-callLoopRadioBtns();
-
-function loopOptionDivs() {
-  for (let i = 0; i < options.length; i++) {
-    options[i].addEventListener("click", (e) => {
-      const target = e.target;
-      console.log(target);
-
-      if (target.type === "radio") {
-        callLoopRadioBtns();
-      };
-      saveToLocalStorage(userOptions);
-      getFromLocalStorage();
-    });
-  }
-}
-
-loopOptionDivs();
 
 for(let i = 0; i < planItems.length; i++) {
   const element = planItems[i];
@@ -133,16 +116,20 @@ for(let i = 0; i < planItems.length; i++) {
   })
 }
 
-
-
-
 function toggleModal() {
+  const { userPreference, userBeanType, userQuantity, userGrindOption, userDelivery, userCost } = userOptions
+
   modal.classList.toggle("is-visible");
 
   if (modal.classList.contains("is-visible")) {
     getFromLocalStorage();
-    checkoutPrice.textContent = userOptions.userCost;
-    checkoutModalPrice.textContent = userOptions.userCost;
+    modalDataPreference.textContent = userPreference
+    modalDataBean.textContent = userBeanType
+    modalDataQuantity.textContent = userQuantity
+    modalDataGrind.textContent = userGrindOption    
+    modalDataDelivery.textContent = userDelivery
+    checkoutPrice.textContent = userCost;
+    checkoutModalPrice.textContent = userCost;
   } else {
     return;
   }
