@@ -814,12 +814,24 @@ nav {
     text-align: left;
     margin: 0;
     padding: 6.25rem 3.75rem;
-    max-width: 55%;
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 48rem) and (min-width: 75rem) {
+  .banner__inner {
+    max-width: 49%;
   }
 }
 
 .banner__inner p {
   opacity: .8;
+}
+
+@media (min-width: 62rem) {
+  .banner__inner p {
+    max-width: 75%;
+  }
 }
 
 .products {

@@ -62,7 +62,6 @@
       max-width: 50%;
     }
   }
-
 }
 
 .banner {
@@ -79,17 +78,19 @@
       text-align: left;
       margin: 0;
       padding: 6.25rem 3.75rem;
-      max-width: 55%;
+      max-width: 60%;
+
+      @media (min-width: $xl-breakpoint) {
+        max-width: 49%;
+      }
     }
 
     p {
       opacity: .8;
+
+      @media (min-width: $lg-breakpoint) {
+        max-width: 75%;
+      }
     }
   }
-
-
-}
-
-@media (min-width: 28.125rem) {
-
 }
