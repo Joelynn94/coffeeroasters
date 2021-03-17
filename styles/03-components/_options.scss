@@ -44,6 +44,11 @@
       color: $light-cream;
     }
 
+    input[type="radio"]:active + label {
+      background-color: $dark-cyan;
+      color: $light-cream;
+    }
+
     input[type="radio"]:hover + label {
       background-color: $pale-orange;
       color: $dark-grey-blue;

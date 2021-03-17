@@ -1532,6 +1532,11 @@ nav {
   color: #FEFCF7;
 }
 
+.options input[type="radio"]:active + label {
+  background-color: #0E8784;
+  color: #FEFCF7;
+}
+
 .options input[type="radio"]:hover + label {
   background-color: #FDD6BA;
   color: #333D4B;
