@@ -54,18 +54,6 @@
       display: block;
       padding: 1.25rem;
     }
-
-    a:hover > img {
-      color: $pale-orange !important;
-    }
   }
-
-  #instagram {
-    background-image: url("../../assets/shared/desktop/icon-instagram.svg");
-    background-size: cover;
-
-    &:hover {
-      filter: invert(93%) sepia(5%) saturate(3428%) hue-rotate(310deg) brightness(102%) contrast(105%);
-    }
-  }
+  
 }

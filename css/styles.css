@@ -391,6 +391,10 @@ button {
   }
 }
 
+path:hover {
+  fill: #FDD6BA;
+}
+
 body {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
@@ -680,16 +684,10 @@ nav {
 
 .nav__link {
   text-decoration: none;
-  color: #333D4B;
+  color: #83888F;
   width: 100%;
   padding: 1rem;
   display: block;
-}
-
-@media (min-width: 48rem) {
-  .nav__link {
-    color: #83888F;
-  }
 }
 
 .nav__mobile-btn {
@@ -1206,20 +1204,6 @@ nav {
 .footer__social a {
   display: block;
   padding: 1.25rem;
-}
-
-.footer__social a:hover > img {
-  color: #FDD6BA !important;
-}
-
-.footer #instagram {
-  background-image: url("../../assets/shared/desktop/icon-instagram.svg");
-  background-size: cover;
-}
-
-.footer #instagram:hover {
-  -webkit-filter: invert(93%) sepia(5%) saturate(3428%) hue-rotate(310deg) brightness(102%) contrast(105%);
-          filter: invert(93%) sepia(5%) saturate(3428%) hue-rotate(310deg) brightness(102%) contrast(105%);
 }
 
 .commitment {

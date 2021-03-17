@@ -77,14 +77,10 @@
 
   &__link {
     text-decoration: none;
-    color: $dark-grey-blue;
+    color: $grey;
     width: 100%;
     padding: 1rem;
     display: block;
-
-    @media (min-width: $md-breakpoint) {
-      color: $grey;
-    }
   }
 
   &__mobile-btn {
