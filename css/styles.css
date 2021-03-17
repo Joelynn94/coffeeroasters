@@ -378,6 +378,10 @@ button {
   }
 }
 
+.plan__grid {
+  margin-top: 6rem;
+}
+
 @media (min-width: 75rem) {
   .plan__grid {
     display: -ms-grid;

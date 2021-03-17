@@ -34,6 +34,7 @@ section {
 }
 
 .plan__grid {
+  margin-top: 6rem;
   @media (min-width: $xl-breakpoint) {
     display: grid;
     grid-template-columns: 1fr 3fr;
