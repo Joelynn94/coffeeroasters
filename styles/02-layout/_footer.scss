@@ -2,12 +2,22 @@
   margin-top: 8rem;
   background-color: $dark-grey-blue;
   color: $light-cream;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
+
+  @media (min-width: $lg-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__logo {
     margin: 0 auto;
     margin-bottom: 3rem;
+
+    @media (min-width: $lg-breakpoint) {
+      margin: 0;
+    }
     
     a {
       display: block;
@@ -35,6 +45,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $lg-breakpoint) {
+      margin: 0;
+    }
 
     a {
       display: block;
