@@ -1,5 +1,5 @@
 .summary {
-  margin-top: 6rem;
+  margin-top: 8rem;
   text-align: center;
   position: relative;
 
@@ -17,12 +17,11 @@
   }
 
   &__heading {
-    opacity: .5;
+    opacity: 0.5;
     text-transform: uppercase;
   }
 
   &__text {
     color: $dark-cyan;
   }
-
 }

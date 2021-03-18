@@ -1,9 +1,8 @@
 .why-us {
-  margin-top: 6rem;
+  margin-top: 8rem;
   padding-top: 2rem;
   text-align: center;
   color: $light-cream;
-
 
   &__container {
     background-color: $dark-grey-blue;
@@ -19,7 +18,7 @@
     }
 
     p {
-      opacity: .8;
+      opacity: 0.8;
       color: $light-cream;
     }
   }
@@ -29,7 +28,7 @@
     padding: 1.5rem;
     display: grid;
     gap: 1.5rem;
-    background: url("../../assets/about/desktop/bg-quality.png");
+    background: url('../../assets/about/desktop/bg-quality.png');
     background-repeat: no-repeat;
     background-size: 105% 50%;
     background-position: top;

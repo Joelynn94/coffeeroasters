@@ -843,7 +843,7 @@ nav {
 }
 
 .products {
-  margin-top: 6rem;
+  margin-top: 12rem;
   text-align: center;
 }
 
@@ -934,7 +934,7 @@ nav {
 }
 
 .why-us {
-  margin-top: 6rem;
+  margin-top: 8rem;
   padding-top: 2rem;
   text-align: center;
   color: #FEFCF7;
@@ -957,7 +957,7 @@ nav {
 }
 
 .why-us__inner p {
-  opacity: .8;
+  opacity: 0.8;
   color: #FEFCF7;
 }
 
@@ -1051,6 +1051,7 @@ nav {
 }
 
 .process {
+  margin-top: 8rem;
   text-align: center;
 }
 
@@ -1082,25 +1083,25 @@ nav {
 .process__line-dot {
   position: absolute;
   top: 0;
-  left: -.8rem;
+  left: -0.8rem;
   height: 25px;
   width: 25px;
   border-radius: 50%;
   border: 1px solid #0E8784;
   background-color: #FEFCF7;
-  margin-top: -.95rem;
+  margin-top: -0.95rem;
 }
 
 .process__line-dot--dark {
   position: absolute;
   top: 0;
-  left: -.8rem;
+  left: -0.8rem;
   height: 25px;
   width: 25px;
   border-radius: 50%;
   border: 1px solid #0E8784;
   background-color: transparent;
-  margin-top: -.95rem;
+  margin-top: -0.95rem;
 }
 
 .process__line #circle2 {
@@ -1233,7 +1234,7 @@ nav {
 }
 
 .commitment {
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-bottom: 7.5rem;
   display: -ms-grid;
   display: grid;
@@ -1367,7 +1368,7 @@ nav {
 }
 
 .locations {
-  margin-top: 7.5rem;
+  margin-top: 8rem;
   text-align: center;
 }
 
@@ -1409,7 +1410,7 @@ nav {
 }
 
 .summary {
-  margin-top: 6rem;
+  margin-top: 8rem;
   text-align: center;
   position: relative;
 }
@@ -1430,7 +1431,7 @@ nav {
 }
 
 .summary__heading {
-  opacity: .5;
+  opacity: 0.5;
   text-transform: uppercase;
 }
 

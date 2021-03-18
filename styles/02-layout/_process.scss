@@ -1,4 +1,5 @@
 .process {
+  margin-top: 8rem;
   text-align: center;
 
   @media (min-width: $md-breakpoint) {
@@ -24,24 +25,24 @@
     &-dot {
       position: absolute;
       top: 0;
-      left: -.8rem;
+      left: -0.8rem;
       height: 25px;
       width: 25px;
       border-radius: 50%;
       border: 1px solid $dark-cyan;
       background-color: $light-cream;
-      margin-top: -.95rem;
+      margin-top: -0.95rem;
 
       &--dark {
         position: absolute;
         top: 0;
-        left: -.8rem;
+        left: -0.8rem;
         height: 25px;
         width: 25px;
         border-radius: 50%;
         border: 1px solid $dark-cyan;
         background-color: transparent;
-        margin-top: -.95rem;
+        margin-top: -0.95rem;
       }
     }
 
