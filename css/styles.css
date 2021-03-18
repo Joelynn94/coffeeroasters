@@ -934,7 +934,7 @@ nav {
 }
 
 .why-us {
-  margin-top: 10rem;
+  margin-top: 8rem;
   padding-top: 2rem;
   text-align: center;
   color: #FEFCF7;
@@ -946,7 +946,7 @@ nav {
 }
 
 .why-us__inner {
-  padding: 1.5rem;
+  padding: 3.5rem;
 }
 
 @media (min-width: 48rem) {
