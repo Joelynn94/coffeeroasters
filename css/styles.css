@@ -934,7 +934,7 @@ nav {
 }
 
 .why-us {
-  margin-top: 8rem;
+  margin-top: 10rem;
   padding-top: 2rem;
   text-align: center;
   color: #FEFCF7;
@@ -1051,7 +1051,7 @@ nav {
 }
 
 .process {
-  margin-top: 8rem;
+  margin-top: 12rem;
   text-align: center;
 }
 
@@ -1153,7 +1153,7 @@ nav {
 }
 
 .footer {
-  margin-top: 8rem;
+  margin-top: 12rem;
   background-color: #333D4B;
   color: #FEFCF7;
   padding: 2rem;
@@ -1234,7 +1234,7 @@ nav {
 }
 
 .commitment {
-  margin-top: 8rem;
+  margin-top: 12rem;
   margin-bottom: 7.5rem;
   display: -ms-grid;
   display: grid;
@@ -1368,7 +1368,7 @@ nav {
 }
 
 .locations {
-  margin-top: 8rem;
+  margin-top: 10rem;
   text-align: center;
 }
 
@@ -1410,7 +1410,7 @@ nav {
 }
 
 .summary {
-  margin-top: 8rem;
+  margin-top: 12rem;
   text-align: center;
   position: relative;
 }
