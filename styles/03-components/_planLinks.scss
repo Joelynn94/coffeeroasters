@@ -1,13 +1,13 @@
 .plan__links {
   display: none;
-  padding: 2rem 3.75rem;
+  padding: 2rem 3.7rem 2rem 1.5rem;
 
   @media (min-width: $xl-breakpoint) {
     display: block;
   }
 
   li {
-    opacity: .8;
+    opacity: 0.8;
     padding-bottom: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid $grey;
@@ -43,8 +43,7 @@
   }
 
   .plan__number {
-    padding: .5rem;
+    padding: 0.5rem;
     color: $grey;
   }
-
 }

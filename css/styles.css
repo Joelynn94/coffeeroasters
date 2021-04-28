@@ -366,18 +366,6 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: 48rem) {
-  section {
-    padding: 0 1.75rem;
-  }
-}
-
-@media (min-width: 62rem) {
-  section {
-    padding: 0 3.75rem;
-  }
-}
-
 .plan__grid {
   margin-top: 6rem;
 }
@@ -514,17 +502,11 @@ nav {
 }
 
 .container {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  max-width: 1150px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (min-width: 62rem) {
-  .container {
-    padding-right: 3rem;
-    padding-left: 3rem;
-  }
 }
 
 .open {
@@ -557,11 +539,7 @@ nav {
 }
 
 .dark-bg p {
-  opacity: .8;
-}
-
-.dark-line {
-  margin-top: 4rem;
+  opacity: 0.8;
 }
 
 .mb-section {
@@ -852,7 +830,6 @@ nav {
     display: -ms-grid;
     display: grid;
     gap: 3rem;
-    padding: 3rem;
   }
 }
 
@@ -1340,7 +1317,7 @@ nav {
 .process {
   margin-top: 12rem;
   text-align: center;
-  padding: 1rem 4.5rem 0 4.5rem;
+  padding: 100px 3rem;
 }
 
 @media (min-width: 48rem) {
@@ -1546,7 +1523,7 @@ nav {
 
 .plan__links {
   display: none;
-  padding: 2rem 3.75rem;
+  padding: 2rem 3.7rem 2rem 1.5rem;
 }
 
 @media (min-width: 75rem) {
@@ -1556,7 +1533,7 @@ nav {
 }
 
 .plan__links li {
-  opacity: .8;
+  opacity: 0.8;
   padding-bottom: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #83888F;
@@ -1598,7 +1575,7 @@ nav {
 }
 
 .plan__links .plan__number {
-  padding: .5rem;
+  padding: 0.5rem;
   color: #83888F;
 }
 
