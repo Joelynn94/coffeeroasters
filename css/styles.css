@@ -528,13 +528,13 @@ nav {
 .dark-bg {
   background-color: #333D4B;
   color: #FEFCF7;
-  padding: 1rem;
+  padding: 80px 1.5rem;
   border-radius: 1rem;
 }
 
 @media (min-width: 62rem) {
   .dark-bg {
-    padding: 4rem;
+    padding: 120px 2.5rem;
   }
 }
 

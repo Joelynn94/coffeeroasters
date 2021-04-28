@@ -25,11 +25,11 @@
 .dark-bg {
   background-color: $dark-grey-blue;
   color: $light-cream;
-  padding: 1rem;
+  padding: 80px 1.5rem;
   border-radius: 1rem;
 
   @media (min-width: $lg-breakpoint) {
-    padding: 4rem;
+    padding: 120px 2.5rem;
   }
 
   p {
