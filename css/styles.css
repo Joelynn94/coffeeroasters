@@ -921,11 +921,17 @@ nav {
   padding-top: 2rem;
   text-align: center;
   color: #FEFCF7;
+  background-color: #333D4B;
+  border-radius: 1rem 1rem;
+  background: url("../../assets/about/desktop/bg-quality.png");
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 }
 
-.why-us__container {
-  background-color: #333D4B;
-  border-radius: 1rem 1rem 0 0;
+@media (min-width: 62rem) {
+  .why-us {
+    background-size: 100% 75%;
+  }
 }
 
 .why-us__inner {
@@ -950,11 +956,6 @@ nav {
   display: -ms-grid;
   display: grid;
   gap: 1.5rem;
-  background: url("../../assets/about/desktop/bg-quality.png");
-  background-repeat: no-repeat;
-  background-size: 105% 50%;
-  background-position: top;
-  border-bottom-left-radius: 1rem;
 }
 
 @media (min-width: 48rem) {
@@ -1321,9 +1322,8 @@ nav {
 }
 
 .process {
-  margin-top: 12rem;
   text-align: center;
-  padding: 100px 3rem;
+  padding: 50px 3rem;
 }
 
 @media (min-width: 48rem) {

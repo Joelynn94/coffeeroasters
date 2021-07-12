@@ -3,10 +3,14 @@
   padding-top: 2rem;
   text-align: center;
   color: $light-cream;
+  background-color: $dark-grey-blue;
+  border-radius: 1rem 1rem;
+  background: url("../../assets/about/desktop/bg-quality.png");
+  background-repeat: no-repeat;
+  background-size: 100% 65%;
 
-  &__container {
-    background-color: $dark-grey-blue;
-    border-radius: 1rem 1rem 0 0;
+  @media (min-width: $lg-breakpoint) {
+    background-size: 100% 75%;
   }
 
   &__inner {
@@ -28,11 +32,6 @@
     padding: 1.5rem;
     display: grid;
     gap: 1.5rem;
-    background: url('../../assets/about/desktop/bg-quality.png');
-    background-repeat: no-repeat;
-    background-size: 105% 50%;
-    background-position: top;
-    border-bottom-left-radius: 1rem;
 
     @media (min-width: $md-breakpoint) {
       padding: 1.5rem 3rem 3rem 3rem;
