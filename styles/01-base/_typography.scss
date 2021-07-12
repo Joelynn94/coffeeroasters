@@ -1,11 +1,15 @@
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1rem;
   line-height: 1.625rem;
 }
 
-h1, h2, h3, h4, .alt-title {
-  font-family: 'Fraunces', serif;
+h1,
+h2,
+h3,
+h4,
+.alt-title {
+  font-family: "Fraunces", serif;
 }
 
 .alt-title {
@@ -18,11 +22,13 @@ h1, h2, h3, h4, .alt-title {
   }
 
   @media (min-width: $lg-breakpoint) {
+    line-height: 5.5rem;
     font-size: 6.375rem;
   }
 
   @media (min-width: $xxl-breakpoint) {
     height: 6rem;
+    line-height: 6rem;
     font-size: 9.375rem;
   }
 }
@@ -52,15 +58,15 @@ h4 {
 }
 
 nav {
-  font-family: 'Barlow', sans-serif;
-  font-size: .75rem;
-  line-height: .938rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.938rem;
   letter-spacing: 1px;
 }
 
 @media (min-width: 0) {
   .nav__link {
-    font-family: 'Fraunces', serif;
+    font-family: "Fraunces", serif;
     font-size: 2rem;
     line-height: 2.25rem;
   }
@@ -68,8 +74,8 @@ nav {
 
 @media (min-width: $md-breakpoint) {
   .nav__link {
-    font-family: 'Barlow', sans-serif;
-    font-size: .75rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.75rem;
     line-height: 2.25rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -85,16 +91,16 @@ nav {
 }
 
 .process__card-number {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
 .btn {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
 .large-text {
   margin-top: 1.5rem;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 2rem;
   color: $dark-grey-blue;
   align-self: center;
@@ -103,5 +109,5 @@ nav {
 
 .plan__links,
 .plan__number {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
