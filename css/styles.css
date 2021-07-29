@@ -1323,7 +1323,10 @@ nav {
 
 .process {
   text-align: center;
-  padding: 50px 3rem;
+  background-color: #333D4B;
+  color: #FEFCF7;
+  padding: 4rem 1.5rem;
+  border-radius: 1rem;
 }
 
 @media (min-width: 48rem) {

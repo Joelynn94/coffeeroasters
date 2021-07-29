@@ -1,6 +1,9 @@
 .process {
   text-align: center;
-  padding: 50px 3rem;
+  background-color: $dark-grey-blue;
+  color: $light-cream;
+  padding: 4rem 1.5rem;
+  border-radius: 1rem;
 
   @media (min-width: $md-breakpoint) {
     text-align: left;
