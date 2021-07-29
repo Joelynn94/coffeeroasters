@@ -1478,6 +1478,7 @@ nav {
 .options input[type="radio"] {
   height: 0;
   width: 0;
+  opacity: 0;
 }
 
 .options input[type="radio"]:not(:disabled) ~ label {
@@ -1529,7 +1530,7 @@ nav {
 
 .plan__links {
   display: none;
-  padding: 2rem 3.7rem 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 @media (min-width: 75rem) {

@@ -1,57 +1,57 @@
 .options {
   display: grid;
   gap: 1rem;
-  
+
   @media (min-width: $md-breakpoint) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-    input[type="radio"] {
-      height: 0;
-      width: 0;
-      &:not(:disabled) ~ label {
-        cursor: pointer;
-      }
-
-      &:disabled ~ label {
-        color: hsla(150, 5%, 75%, 1);
-        border-color: hsla(150, 5%, 75%, 1);
-        box-shadow: none;
-        cursor: not-allowed;
-      }
+  input[type="radio"] {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    &:not(:disabled) ~ label {
+      cursor: pointer;
     }
 
-    label {
-      display: block;
-      background-color: $dark-cream;
-      color: $dark-grey-blue;
-      border-radius: 1rem;
-      padding: 1.5rem 1.5rem;
-
-      @media (min-width: $md-breakpoint) {
-        height: 8rem;
-        padding: 3.5rem 1.5rem;
-      }
-    }
-
-    input[type="radio"]:checked + label {
-      background-color: $dark-cyan;
-      color: $light-cream;
-    }
-
-    @media (min-width: $lg-breakpoint) {
-      input[type="radio"]:hover + label {
-        background-color: $pale-orange;
-        color: $dark-grey-blue;
-      }
-    }
-
-    h4 {
-      margin: 0;
-    }
-  
-    p {
-      margin-bottom: 0;
+    &:disabled ~ label {
+      color: hsla(150, 5%, 75%, 1);
+      border-color: hsla(150, 5%, 75%, 1);
+      box-shadow: none;
+      cursor: not-allowed;
     }
   }
 
+  label {
+    display: block;
+    background-color: $dark-cream;
+    color: $dark-grey-blue;
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem;
+
+    @media (min-width: $md-breakpoint) {
+      height: 8rem;
+      padding: 3.5rem 1.5rem;
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: $dark-cyan;
+    color: $light-cream;
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    input[type="radio"]:hover + label {
+      background-color: $pale-orange;
+      color: $dark-grey-blue;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
