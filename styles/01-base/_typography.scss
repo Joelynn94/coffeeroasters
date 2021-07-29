@@ -22,13 +22,12 @@ h4,
   }
 
   @media (min-width: $lg-breakpoint) {
-    line-height: 5.5rem;
-    font-size: 6.375rem;
+    line-height: 6.5rem;
+    font-size: 7.375rem;
   }
 
   @media (min-width: $xxl-breakpoint) {
-    height: 6rem;
-    line-height: 6rem;
+    line-height: 8rem;
     font-size: 9.375rem;
   }
 }

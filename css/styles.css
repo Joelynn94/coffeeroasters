@@ -411,15 +411,14 @@ h4,
 
 @media (min-width: 62rem) {
   .alt-title {
-    line-height: 5.5rem;
-    font-size: 6.375rem;
+    line-height: 6.5rem;
+    font-size: 7.375rem;
   }
 }
 
 @media (min-width: 90rem) {
   .alt-title {
-    height: 6rem;
-    line-height: 6rem;
+    line-height: 8rem;
     font-size: 9.375rem;
   }
 }
