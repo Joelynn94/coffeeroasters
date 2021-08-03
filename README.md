@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d370eefb-1281-4114-b021-361feb54f934/deploy-status)](https://app.netlify.com/sites/jl-coffeeroasters/deploys)
+
 # Frontend Mentor - Coffeeroasters subscription site
 
 ![Design preview for the Coffeeroasters subscription site coding challenge](./preview.jpg)
