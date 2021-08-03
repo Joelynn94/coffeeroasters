@@ -1400,7 +1400,7 @@ nav {
   margin-top: 5rem;
   display: -ms-grid;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }

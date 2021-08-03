@@ -70,7 +70,7 @@
   &__cards {
     margin-top: 5rem;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: 1fr;
 
     @media (min-width: $md-breakpoint) {
