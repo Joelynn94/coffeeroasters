@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/Joelynn94/coffeeroasters)
-- Live Site URL: [Live](https://jl-coffeeroasters.netlify.app/)
+- Solution URL: [https://github.com/Joelynn94/coffeeroasters](https://github.com/Joelynn94/coffeeroasters)
+- Live Site URL: [https://jl-coffeeroasters.netlify.app/](https://jl-coffeeroasters.netlify.app/)
 
 ## My process
 
